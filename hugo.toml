@@ -1,6 +1,6 @@
 baseURL = 'https://yuhengliuleo.github.io/'
 languageCode = 'zh'
-title = 'My New Hugo Site'
+title = 'Leo'
 theme = "hugo-PaperMod"
 
 [params]
@@ -18,5 +18,6 @@ theme = "hugo-PaperMod"
     name = "文章"
     url = "/posts/"
     weight = 1
+
 
 
