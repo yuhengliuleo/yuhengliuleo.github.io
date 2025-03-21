@@ -1,5 +1,22 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
+baseURL = 'https://yuhengliuleo.github.io/'
+languageCode = 'zh'
 title = 'My New Hugo Site'
 theme = "hugo-PaperMod"
+
+[params]
+  defaultTheme = "auto"  # 自动切换深色/浅色模式
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 1
+
 
