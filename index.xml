@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Leo</title>
+    <link>https://yuhengliuleo.github.io/</link>
+    <description>Recent content on Leo</description>
+    <generator>Hugo -- 0.146.5</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 27 May 2025 10:00:00 +0800</lastBuildDate>
+    <atom:link href="https://yuhengliuleo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5月希望组合收益报告</title>
+      <link>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E4%B8%AA%E4%BA%BA%E8%B5%84%E4%BA%A7/asset-structure-5-27/</link>
+      <pubDate>Tue, 27 May 2025 10:00:00 +0800</pubDate>
+      <guid>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E4%B8%AA%E4%BA%BA%E8%B5%84%E4%BA%A7/asset-structure-5-27/</guid>
+      <description>&lt;p&gt;针对目前统计数据中的一些问题，5月16日我在统计数据层面作出了一些新调整，将2025年1月27日资产列为2025收益基准并将此资产组合命名为“希望组合”。&lt;/p&gt;
+&lt;p&gt;本月的资产统计将按照调整后的规定计算，并增加2025年收益率统计。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;资产类别&lt;/th&gt;
+          &lt;th&gt;持仓比例&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;美国股票&lt;/td&gt;
+          &lt;td&gt;33.25%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;欧洲股票&lt;/td&gt;
+          &lt;td&gt;1.35%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;日经225&lt;/td&gt;
+          &lt;td&gt;2.45%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;恒生科技&lt;/td&gt;
+          &lt;td&gt;2.59%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;原油&lt;/td&gt;
+          &lt;td&gt;1.36%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;加密货币&lt;/td&gt;
+          &lt;td&gt;22.16%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;债券&lt;/td&gt;
+          &lt;td&gt;19.61%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;流动资金&lt;/td&gt;
+          &lt;td&gt;18.22%&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;截至5月27日，2025年度收益率&lt;strong&gt;为-2.43%&lt;/strong&gt;（以1月27日为基准）。&lt;/p&gt;
+&lt;p&gt;操作：&lt;/p&gt;
+&lt;p&gt;5.17 关闭所有定投，等待资产梳理后进一步做出判断&lt;/p&gt;
+&lt;p&gt;5.17 投资减熵操作之一，卖出腾讯理财通平台所有基金，释放流动资金7.61%。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>制作一个外出假条网页（娱乐向）</title>
+      <link>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E5%AE%9E%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/fustuaffdiv/</link>
+      <pubDate>Sun, 25 May 2025 10:00:00 +0800</pubDate>
+      <guid>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E5%AE%9E%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/fustuaffdiv/</guid>
+      <description>&lt;p&gt;周日花了约四个半小时用AI手搓了一个能够生成以假乱真出门凭证的小程序，运行状况良好&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;说明：本程序仅供娱乐，禁止任何实际用途！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;#程序&lt;/p&gt;
+&lt;p&gt;仅限iPhone点击：https://www.icloud.com/shortcuts/8660e1030382499ea9380905da0dbafa&lt;/p&gt;
+&lt;p&gt;GitHub库：https://github.com/yuhengliuleo/fustuaffdiv&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>保险研究报告</title>
+      <link>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/insurance-research/</link>
+      <pubDate>Sun, 11 May 2025 19:00:00 +0800</pubDate>
+      <guid>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/insurance-research/</guid>
+      <description>&lt;p&gt;自从了解大学生医保之后，感觉保险在出现问题的时候确实是一个保障，能够部分的减轻经济上的压力。所以，花费一点时间，以大学生的身份，理一理保险这个东西。首先需要声明的是，本篇文章不会涉及到财产险。&lt;/p&gt;
+&lt;h2 id=&#34;一保险是什么&#34;&gt;一、保险是什么？&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;保险的本质是一个集群体之力以应对个体难以承受风险的机制&lt;/strong&gt;。作为一个与钱相关的行业，也一定是离钱最近的行业。因此，这个行业一定是高度逐利的，谁不想要用更多的钱，博取更多的收益呢？这就导致了现代的保险早已失去了远离了保险的本质，变成了金融机构骗钱的工具。也就导致了很多人对保险坏印象。&lt;/p&gt;
+&lt;p&gt;我一直喜欢追求事情的本质，保险是保险，投资是投资。尽管90%的保险产品都成了金融产品，但是其中一定还是有那些接近保险本质的产品的。在这一篇文章中，我会努力寻找那些接近保险初衷的保险，返璞归真。&lt;/p&gt;
+&lt;p&gt;关于保险的本质和演变史，我想要通过复述一个小故事来讲清楚。&lt;/p&gt;
+&lt;p&gt;酒店里面来了100个实习生，他们要在这里学10年洗盘子。可是，洗盘子难免会打碎盘子，这个酒店的盘子特别贵，一个1000元，实习生们打碎盘子后要么罚款1000，要么卷铺盖走人，代价特别大。有没有什么办法能减少甚至规避掉这些风险呢？那就是大家形成一个整体，每个人都出一点钱，以合力应对个体的不测。经过测算，这100位实习生每年打碎的盘子大约是4个，所以这个整体每年需要花费盘子的赔偿费在4&lt;em&gt;1000=4000元，因此，这100位实习生每人需要交4000/100=40元就可以了。另外，为了确保这4000块钱不被挪用，实习生们需要的是一个第三方来管理这笔钱。我们假设这个第三方每年收取的管理费为1000元，所以，这100位实习生们每年需要缴纳的金额为（4&lt;/em&gt;1000+1000）/1000=50元。是的，每年只需要缴纳50元，用50元撬动了1000元甚至更多的钱，在遇到困难的时候就可以轻描淡写的度过了。**这就是保险的最初形态，也就是定期保险，付出较少的钱，应对个人难以承受的巨大灾难。**生活中常见的定期保险有寿险、医疗险、重疾险、意外险等等等等&lt;/p&gt;
+&lt;p&gt;人都是不满足的，虽然用50元撬动了1000元，但是毕竟每年还是花了50元，如果有一位做事小心的实习生摔碎盘子的概率极小，那么他不久成为粗心的人的垫脚石了吗，有没有一种办法，能够让人们在保险到期之后拿回本金呢？有的，但是你需要加钱。前面的50块钱是固定不变的，需要你继续加钱给经纪人，是留着经纪人投资的，以便帮你把保费赚回来。这种模式的保险叫做&amp;quot;&lt;strong&gt;两全保险&amp;quot;，包含两部分：风险保费和储蓄保费，风险保费就是纯粹的保险，而储蓄保费则是积累现金价值，用于未来返还满期金的。&lt;strong&gt;也就是说，所谓的返还本金，都是噱头，不过是给他的&lt;/strong&gt;多余的现金价值投资产生的收益覆盖了本金&lt;/strong&gt;而已。也就是说，即使把&lt;strong&gt;这笔钱放在自己这里，也能通过投资实现回本。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;至于后来发展出来的分红保险、万能险、投资联结保险等等，本质都是保险+投资的组合，只是被保人需要付出的金额越来越多，&amp;ldquo;投资&amp;quot;的收益也越来越好了。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;更加详细的内容，可以参考这里：&lt;br&gt;
+&lt;a href=&#34;https://www.bilibili.com/video/BV13741157qV?vd_source=d96e19e5f16193c9ab4bbdd870971797&#34;&gt;【David科普】保险是什么？保险的历史？一个小故事带你了解几种保险功能及保险公司3大盈利来源 &amp;ldquo;盘子的故事&amp;rdquo; | David科普&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;看到这里，我想我应该讲清楚了。为什么现在的保险与&amp;quot;骗人&amp;quot;产生了一定的联系？就是因为它已经失去了原本单纯的面貌，而这些&lt;strong&gt;所谓的回本、所谓的收益，其实是比不上被保人所付出的机会成本的&lt;/strong&gt;，也就是说，这一定是一个亏本的买卖。不管卖保险的人说的是多么花言巧语，被保人是一定赢不了的。&lt;/p&gt;
+&lt;h2 id=&#34;二保险的种类&#34;&gt;二、保险的种类&lt;/h2&gt;
+&lt;p&gt;上面的故事讲到了保险的大类：定期保险、两全保险、分红保险、万能险、投资联结保险等等。但我的态度是很明确的：保险就保险，投资就是投资。对我而言，保险就是单纯的付出，我不希望给我带来任何收益。基于这样的理念，接下来的写到的就只是对保险的本原&amp;mdash;&amp;mdash;定期保险的分类。定期保险包括：寿险、医疗险、重疾险、意外险。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;意外险&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;因意外伤害导致的身故/伤残赔付保额，附加意外医疗报销。&lt;strong&gt;意外险的设计目的是转移因意外事故导致的人身伤害风险&lt;/strong&gt;，其核心功能是通过经济补偿来应对突发意外事件带来的风险。大部分的意外险包含两种赔付方式：&lt;strong&gt;一次性赔付和报销补偿&lt;/strong&gt;。&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;寿险&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以被保险人的生命为标的，身故或全残时赔付保险金给相关的受益人。&lt;strong&gt;设计的目的就是减少个人死亡对家庭带来的伤害&lt;/strong&gt;。比如，家中的顶梁柱突然意外去世了，家庭的收入来源直接减少了一大半，再加上还有房贷、车贷等等的贷款，收入减少、还要还贷款对于家庭的打击实在是太大了。有了这个保险之后，可以保障整个家庭的平稳过渡。&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;重疾险&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;确诊合同约定的重大疾病（如癌症、心梗），&lt;strong&gt;一次性赔付&lt;/strong&gt;保额。重疾险和寿险一样，都是一次性给付的保险金。用来&lt;strong&gt;弥补因为重病而带来的隐形经济损失，如在重病期间不能工作而给家庭带来的负担，确保的是重病期间整个家庭不受到影响，不&amp;quot;因病返贫&amp;rdquo;&lt;/strong&gt;，也确保患者在疾病面前保留经济尊严，是&amp;quot;活着用的保险&amp;quot;。同时，有些重疾险还可以覆盖医保不报销的一些隐性支出。&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;&lt;strong&gt;医疗险&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;报销因疾病或意外产生的医疗费用，是报销性保险。虽然都是关于医疗的保险，但是医疗险与重疾险是完全不同的。具体的区别如下表：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;维度&lt;/th&gt;
+          &lt;th&gt;重疾险&lt;/th&gt;
+          &lt;th&gt;医疗险&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;赔付方式&lt;/td&gt;
+          &lt;td&gt;确诊即赔（一次性给付）&lt;/td&gt;
+          &lt;td&gt;实报实销（花多少报多少）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;资金用途&lt;/td&gt;
+          &lt;td&gt;自由支配（可用于生活开支）&lt;/td&gt;
+          &lt;td&gt;仅限医疗费用报销&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;功能定位&lt;/td&gt;
+          &lt;td&gt;收入替代&lt;/td&gt;
+          &lt;td&gt;医疗费解决&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;医疗险的设计目的是&lt;strong&gt;解决&amp;quot;看病贵&amp;quot;问题，其核心是转移高额医疗支出风险&lt;/strong&gt;，确保被保险人不会因疾病或意外导致的医疗费用陷入经济困境。&lt;/p&gt;
+&lt;h2 id=&#34;三总结&#34;&gt;三、总结&lt;/h2&gt;
+&lt;p&gt;保险对于个人和家庭来说是必要的，通过小额的付出撬动大的杠杆，增强对风险的抵御能力。保险是人类的一项重要的发明，但是脱离了保险本质的&amp;quot;保险&amp;quot;，就变成了盈利巨大的生意了。对于我个人来讲，光是研究最简单的保险的条款就已经够心烦了，那些搭配无数附加产品的保险，我是一辈子也研究不明白的。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>从新加坡政府投资公司（GIC）的投资中能学到什么？</title>
+      <link>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/gic-investment-insights/</link>
+      <pubDate>Thu, 01 May 2025 10:00:00 +0800</pubDate>
+      <guid>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/gic-investment-insights/</guid>
+      <description>&lt;p&gt;看过小Lin说的一期视频，里面讲到了GIC的投资报告是相对来说比较透明的，于是从网上下载了一份，看一看国家的主权基金是如何做投资的。&lt;/p&gt;
+&lt;h2 id=&#34;投资策略&#34;&gt;投资策略&lt;/h2&gt;
+&lt;p&gt;GIC认为，目前的世界形势不确定性非常大，全球秩序重塑、大国国内政治动荡、技术快速变革、气候变化效应加剧且不可预测等等。这些都是废话，世界永远是不确定的，即使是在时候认为的最好的时刻。但是后面就很重要了，GIC认为投资就像在大海中航行，&lt;strong&gt;投资者需要有的是核心的目标和原则作为坚固的锚，还要有自己独特的优势作为前进的指南针&lt;/strong&gt;。对于GIC来说，他们的目标是长期保护和提升新加坡外汇储备的国际购买力，原则是价格纪律和细化多元化，优势是长期灵活资本和深厚的伙伴关系。&lt;/p&gt;
+&lt;p&gt;我想我也要对于我的投资有一个宏观的理解，便于进一步的决策。那么，对于我目前的投资策略而言，&lt;strong&gt;我的目标是在保持现有资金的购买力的基础上进一步实现超额收益，原则是价格纪律和稳中求进&lt;/strong&gt;，至于优势&amp;hellip;&amp;hellip;普通投资者似乎是没有啥优势啊。按照这些分析，我需要的&lt;strong&gt;资产配置策略是偏向于激进的&lt;/strong&gt;，毕竟是要获得&amp;quot;超额收益&amp;quot;的嘛，并且因为&amp;quot;长期&amp;quot;的视角，所以&lt;strong&gt;能够承受较大的波动&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;另外，看这个报告收获最大的是GIC的操作策略：保持价格纪律。这个可能不是一个新鲜的名词，但是我确实是第一次了解到，看样子这个应该&amp;quot;价值投资&amp;quot;紧密的联系。什么是价格纪律？就是**在投资决策中坚持以合理的价格购买资产，避免因市场情绪、过度乐观或短期波动而支付过高价格的行为。说的容易，但是实操起来很难。主要的难点在&amp;mdash;&amp;mdash;&lt;br&gt;
+1.&lt;br&gt;
+&lt;strong&gt;如何判断&amp;quot;合理的价格&amp;quot;&lt;/strong&gt;？这需要有合理的评估工具。我目前唯一知道的评估工具是市盈率（P/E）。但是目前出现的问题是，很多资产的市盈率非常高，但是依旧能涨，也就说，这个工具可能已经不准了。所以，对于判断&amp;quot;合理的价格&amp;quot;，我是判断不出来的。 &lt;strong&gt;在这个方面还是要学习的： 1.学习更多评估的工具 2.搞懂每个评估工具的基本逻辑。&lt;/strong&gt;&lt;br&gt;
+2.&lt;br&gt;
+&lt;strong&gt;怎么判断市场的情绪&lt;/strong&gt;？市场永远处在一种非理性的状态，不是在恐慌就是在fomo。从我个人的短暂的市场经历来看，不跟随市场的情绪已经够难，判断市场情绪更是难如登天。 &lt;strong&gt;关键的结症在于根本就没有量化的标准，就像攀岩没有抓手一样，根本无能为力。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;所以，对于价格纪律这个本身的操作，对于我的学习借鉴意义并不是很大，毕竟一个人是没有办法做到一个办公室的高学历人才的水平的。但是我们可以学习的是，&lt;strong&gt;严守纪律&lt;/strong&gt;。其实回望我之前一些失败的投资，往往就是跌了就开始跑路，结果跑在了最低点。原因很复杂，但是最重要的心里面没有对于宏观上的一套判断逻辑，这样非常容易一下子直接被带跑了。&lt;/p&gt;
+&lt;p&gt;此外，价格纪律的操作衍生出来的就是投资组合的弹性了。 &lt;strong&gt;对于一个资产组合几乎没有任何输入现金流或者输入现金流远小于总资产的资产组合来说，组合的弹性必须的，不必多说。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;对于多元化投资，这更是基本逻辑了，永远不要把鸡蛋放在一个篮子里。具体的内容，下面一部分会讲。&lt;/p&gt;
+&lt;h2 id=&#34;投资组合&#34;&gt;投资组合&lt;/h2&gt;
+&lt;h3 id=&#34;一资产组合配置&#34;&gt;（一）资产组合配置&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;资产类别&lt;/th&gt;
+          &lt;th&gt;2024 (%)&lt;/th&gt;
+          &lt;th&gt;2023 (%)&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;发达市场股票&lt;/td&gt;
+          &lt;td&gt;13&lt;/td&gt;
+          &lt;td&gt;13&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;新兴市场股票&lt;/td&gt;
+          &lt;td&gt;17&lt;/td&gt;
+          &lt;td&gt;17&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;名义债券和现金&lt;/td&gt;
+          &lt;td&gt;32&lt;/td&gt;
+          &lt;td&gt;34&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;通胀挂钩债券&lt;/td&gt;
+          &lt;td&gt;7&lt;/td&gt;
+          &lt;td&gt;6&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;房地产&lt;/td&gt;
+          &lt;td&gt;13&lt;/td&gt;
+          &lt;td&gt;13&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;私募股权&lt;/td&gt;
+          &lt;td&gt;18&lt;/td&gt;
+          &lt;td&gt;17&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;总计&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;100&lt;/td&gt;
+          &lt;td&gt;100&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;资产组合（2024年3月31日 vs 2023年3月31日）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我对2024年的资产组合比例进行了一下分类：股票48%（包含私募股权），债券占39%，房地产13%。其中，&lt;strong&gt;进攻型资产占比61%（股票、房地产），稳健型资产占比39%&lt;/strong&gt;，配置符合比较传统的平衡型资产配置。上面提到，GIC的目的是长期保护和提升新加坡外汇储备的国际购买力，&lt;strong&gt;他们能做到的是用6成的进攻资产和4成的稳健资产拿到5年年化靠近4.5%，波动率8%左右的结果&lt;/strong&gt;。但是对于我来说，肯定是不够的，我还年轻，抗风险能力比较强，对于收益率的要求也比较高。&lt;strong&gt;我目前资产组合按照80%进攻型资产和20%的稳健资产来配置，期望能得到3年年化7%的收益。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;GIC 投资组合的名义年化收益率和波动率&#34; loading=&#34;lazy&#34; src=&#34;https://yuhengliuleo.github.io/media/image3.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GIC 投资组合的名义年化收益率和波动率&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;二资产组合投资分布&#34;&gt;（二）资产组合投资分布&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;GIC 投资地域分布&#34; loading=&#34;lazy&#34; src=&#34;https://yuhengliuleo.github.io/media/image4.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;从地域来分，&lt;strong&gt;GIC对于发达国家的投资远远高于发展中国家&lt;/strong&gt;，其中，发达国家占比约58%（美国、英国、欧洲、日本），发展国家约31%，全球占比11%。基本上，发达国家与发展中国家的投资比大约在65:35左右。发达国家的经济体量大、市场成熟、法律体系健全，投资回报相对稳定且可预测，发展中国家可能会产生更高的收益，但是风险也同样增加，与GIC的目标并不相符。&lt;/p&gt;
+&lt;p&gt;作为个人投资者，我的钱很少，只能努力的把钱花在刀刃上。我目前投资的标的是美国、欧洲、日本、香港、加密货币（95%以上是比特币）和中国国债、美国国债，**发达国家和发展中国家的投资比例与GIC的65:35差不多。**但是，必须要注意的是，如果仅聚焦于股票市场，则基本上全是发达国家股票，且超过90%以上资金投资美国，这是需要注意的地方，这一次市场的回调其实已经凸显出了一些问题，尽管美国市场很好，但是跌还是得跌，&lt;strong&gt;还是需要进行分散投资的。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;三资产组合管理&#34;&gt;（三）资产组合管理&lt;/h3&gt;
+&lt;h4 id=&#34;1-再平衡策略&#34;&gt;(1) &amp;ldquo;再平衡&amp;quot;策略：&lt;/h4&gt;
+&lt;p&gt;指通过买卖资产，&lt;strong&gt;将投资组合的资产类别比例调整回政策投资组合设定的目标范围。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当某类资产价格上涨，导致其占比超过目标范围上限时，GIC会卖出该资产；&lt;/p&gt;
+&lt;p&gt;当某类资产价格下跌，导致其占比低于目标范围下限时，GIC会买入该资产。&lt;/p&gt;
+&lt;p&gt;面对中期变化，临时调整资产配置。&lt;/p&gt;
+&lt;p&gt;GIC所有的资产配置的比例都是动态的，都是在一定的范围之内的。调整的原则就是根据上文中提到的&amp;quot;价格纪律&amp;rdquo;，也就是均值回归的假设。 &lt;strong&gt;这是我在构建起我的资产组合之后需要重点学习的内容。&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2-资产组合化&#34;&gt;(2) 资产组合化&lt;/h4&gt;
+&lt;p&gt;GIC将资产分为政策投资组合、主动投资组合两类。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>4.28资产结构</title>
+      <link>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E4%B8%AA%E4%BA%BA%E8%B5%84%E4%BA%A7/asset-structure-4-28/</link>
+      <pubDate>Mon, 28 Apr 2025 10:00:00 +0800</pubDate>
+      <guid>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E4%B8%AA%E4%BA%BA%E8%B5%84%E4%BA%A7/asset-structure-4-28/</guid>
+      <description>&lt;h3 id=&#34;当前资产分配&#34;&gt;当前资产分配&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;资产类别&lt;/th&gt;
+          &lt;th&gt;持仓比例&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;美国股票&lt;/td&gt;
+          &lt;td&gt;33.49%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;欧洲股票&lt;/td&gt;
+          &lt;td&gt;1.83%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;日经225&lt;/td&gt;
+          &lt;td&gt;2.84%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;恒生科技&lt;/td&gt;
+          &lt;td&gt;1.89%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;债券&lt;/td&gt;
+          &lt;td&gt;20.54%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;加密货币&lt;/td&gt;
+          &lt;td&gt;18.63%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;原油&lt;/td&gt;
+          &lt;td&gt;1.16%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;流动资金&lt;/td&gt;
+          &lt;td&gt;19.61%&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;操作记录&#34;&gt;操作记录&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;原油&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;4月1日：卖出30%，达到目标价格71元。&lt;/li&gt;
+&lt;li&gt;4月8日、4月9日、4月14日、4月17日：买入，价格分别为60元、56元、61元、63元（原油价格暴跌）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;原油操作截图&#34; loading=&#34;lazy&#34; src=&#34;https://yuhengliuleo.github.io/media/image1.JPG&#34;&gt;&lt;/p&gt;
+&lt;p&gt;操作还是很精彩的！&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;4月7日：暂停所有股票定投&lt;/strong&gt;&lt;br&gt;
+全球市场暴跌，前景不明，保留资金需要，暂停观望。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;4月23日：恢复美股定投，改为每周定投&lt;/strong&gt;&lt;br&gt;
+4月23日，特朗普总统在关税领域释放积极信号——“很快”减少对中国商品的关税。我认为他的决策团队依旧在乎市场，出乎市场意料的“神操作”将减少。但美国股票仍具有较高不确定性，个人判断不再适合之前计划的大额资金投入，需继续观望。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;加密货币操作&lt;/strong&gt;：&lt;br&gt;
+自2月下跌以来，不停将USDT换成BTC。因统计上将所有加密货币（原生代币、稳定币等）归为“加密货币”类别，未详细记录相关操作。这一个月系统学习了区块链尤其是比特币相关知识，更加相信BTC的价值所在，将长期持有BTC，早日攒下第一枚完整的BTC！&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;加密货币操作截图&#34; loading=&#34;lazy&#34; src=&#34;https://yuhengliuleo.github.io/media/image2.JPG&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;总结&#34;&gt;总结&lt;/h3&gt;
+&lt;p&gt;这一个月经历了美股市场的大波动，美股四月最大跌幅为17%，导致整个股票-债券-流动资金资产组合的收益率为-5%。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>写清大学生医保</title>
+      <link>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/collage-medicalcare/</link>
+      <pubDate>Sat, 26 Apr 2025 10:00:00 +0800</pubDate>
+      <guid>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/collage-medicalcare/</guid>
+      <description>&lt;p&gt;今天去省中医院做了个推拿，感觉不错，花了250块钱。和我一起去的同学同样做了针灸，花了313块，但他用了大学生医保，只花了1块钱。我之前居然不知道还有大学生医保这个东西！损失太多！今天决定花时间把大学生医保写清楚。&lt;/p&gt;
+&lt;h2 id=&#34;一什么是大学生医保&#34;&gt;一、什么是大学生医保？&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;城乡居民基本医疗保险&lt;/strong&gt; 的一部分，由 &lt;strong&gt;南京市医保局&lt;/strong&gt; 统一管理，各高校组织参保。&lt;/p&gt;
+&lt;h2 id=&#34;二大学生医保能做什么&#34;&gt;二、大学生医保能做什么？&lt;/h2&gt;
+&lt;h3 id=&#34;1门诊统筹待遇&#34;&gt;（1）门诊统筹待遇&lt;/h3&gt;
+&lt;p&gt;（医保统筹是指报销参保人的医疗费用）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;普通门诊&lt;/strong&gt;：年度起付线100元，社区/校医院报销60%，非社区机构报销40%，年度限额600元。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;高血压/糖尿病（&amp;ldquo;两病&amp;rdquo;）&lt;/strong&gt;：单独病种限额1100元，合并病种限额1500元。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;项目&lt;/th&gt;
+          &lt;th&gt;校医院/校定点社区医院&lt;/th&gt;
+          &lt;th&gt;校外医院（需转诊）&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;起付线&lt;/td&gt;
+          &lt;td&gt;0元&lt;/td&gt;
+          &lt;td&gt;100元/年（累计计算）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;报销比例&lt;/td&gt;
+          &lt;td&gt;60%&lt;/td&gt;
+          &lt;td&gt;40%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;年度限额&lt;/td&gt;
+          &lt;td&gt;600元&lt;/td&gt;
+          &lt;td&gt;600元&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;2门诊高费用补偿待遇&#34;&gt;（2）门诊高费用补偿待遇&lt;/h3&gt;
+&lt;p&gt;待遇享受期内，&lt;strong&gt;享受完门诊统筹待遇后&lt;/strong&gt;，继续发生的门（急）诊医疗费用，个人自付2000元以上部分，在社区医疗机构及校医疗机构就诊的，基金支付50%，在非社区医疗机构就诊的，基金支付30%，年度基金支付限额2800元。&lt;/p&gt;
+&lt;h3 id=&#34;3门诊特殊病种待遇&#34;&gt;（3）门诊特殊病种待遇&lt;/h3&gt;
+&lt;p&gt;门诊特殊病种包括恶性肿瘤、血友病、系统性红斑狼疮等13类病种，基金支付比例85%，按照病种不同，基金支付限额8000元至20万元不等。&lt;/p&gt;
+&lt;h3 id=&#34;4住院待遇&#34;&gt;（4）住院待遇&lt;/h3&gt;
+&lt;p&gt;起付线以上部分按比例报销，具体比例根据医院等级和费用类型确定。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;医院等级&lt;/th&gt;
+          &lt;th&gt;起付线&lt;/th&gt;
+          &lt;th&gt;报销比例&lt;/th&gt;
+          &lt;th&gt;年度限额&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;社区/一级医院&lt;/td&gt;
+          &lt;td&gt;300元&lt;/td&gt;
+          &lt;td&gt;90%&lt;/td&gt;
+          &lt;td&gt;30万元&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;二级医院&lt;/td&gt;
+          &lt;td&gt;500元&lt;/td&gt;
+          &lt;td&gt;85%&lt;/td&gt;
+          &lt;td&gt;30万元&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;三级医院&lt;/td&gt;
+          &lt;td&gt;800元&lt;/td&gt;
+          &lt;td&gt;80%&lt;/td&gt;
+          &lt;td&gt;30万元&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;异地就医（备案后）&lt;/td&gt;
+          &lt;td&gt;800元&lt;/td&gt;
+          &lt;td&gt;70%&lt;/td&gt;
+          &lt;td&gt;30万元&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;三如何使用大学生医保&#34;&gt;三、如何使用大学生医保？&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;本地就医&lt;/strong&gt;&lt;br&gt;
+挂号时需要注意选择&lt;strong&gt;医保挂号&lt;/strong&gt;，付款时直接&lt;strong&gt;使用医保码支付&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;本地买药&lt;/strong&gt;&lt;br&gt;
+直接刷&lt;strong&gt;医保码&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;异地就医&lt;/strong&gt;&lt;br&gt;
+需要办理异地就医！&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;办理转外就医备案手续：通过&amp;quot;&lt;strong&gt;南京医保&lt;/strong&gt;&amp;ldquo;微信公众号办理异地就医备案手续（&amp;ldquo;南京医保&amp;quot;微信公众号&amp;mdash;服务大厅&amp;mdash;异地就医备案）。&lt;/li&gt;
+&lt;li&gt;持社会保障卡（或医保电子凭证）在异地刷卡（码）结算。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;参考文献&#34;&gt;参考文献&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/BfHeD3bWlMtBnvfoeoUmug&#34;&gt;大学生医保政策解读&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/l4f2WZyl2y0u1l0q7R3KAg&#34;&gt;大学生医保使用指南&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>markdown格式转换word格式操作指南</title>
+      <link>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E5%AE%9E%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/markdown-convert-word/</link>
+      <pubDate>Tue, 01 Apr 2025 11:00:00 +0800</pubDate>
+      <guid>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E5%AE%9E%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/markdown-convert-word/</guid>
+      <description>&lt;p&gt;本文解析视频链接：&lt;/p&gt;
+&lt;p&gt;【AI输出带#**#**？分享我解决的三种方法】
+&lt;a href=&#34;https://www.bilibili.com/video/BV1FLZPYaEcg/?share_source=copy_web&amp;amp;vd_source=d96e19e5f16193c9ab4bbdd870971797&#34;&gt;https://www.bilibili.com/video/BV1FLZPYaEcg/?share_source=copy_web&amp;amp;vd_source=d96e19e5f16193c9ab4bbdd870971797&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Markdown
+是一种轻量级标记语言，因其简洁高效而广泛用于写作、笔记和文档记录，我们AI中复制的内容采用的就是markdown格式。然而，在需要与他人分享或提交正式文档时，通常需要将其转换为
+Word 文档（&lt;code&gt;.docx&lt;/code&gt;）格式。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;最简单的方法：
+直接在聊天框中输入提示词&amp;quot;不使用markdown格式输出，再生成一遍上面的内容&lt;/strong&gt;&amp;quot;&lt;/p&gt;
+&lt;h4 id=&#34;在线工具&#34;&gt;在线工具&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;工具及路径&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;腾讯文档 (&lt;/strong&gt;&lt;code&gt;docs.qq.com&lt;/code&gt;&lt;strong&gt;)&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;访问 &lt;code&gt;docs.qq.com&lt;/code&gt;，登录或直接使用。&lt;/li&gt;
+&lt;li&gt;新建空白文档，将 Markdown 内容粘贴进去。&lt;/li&gt;
+&lt;li&gt;手动调整格式（例如标题用&amp;quot;样式&amp;quot;设置为一级标题，列表用工具栏调整）。&lt;/li&gt;
+&lt;li&gt;点击&amp;quot;文件&amp;quot; &amp;gt; &amp;ldquo;下载&amp;rdquo; &amp;gt; &amp;ldquo;Microsoft Word (.docx)&amp;quot;，保存到本地。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;石墨文档 (&lt;/strong&gt;&lt;code&gt;shimo.im&lt;/code&gt;&lt;strong&gt;)&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;打开 &lt;code&gt;shimo.im&lt;/code&gt;，注册或登录。&lt;/li&gt;
+&lt;li&gt;创建新文档，粘贴 Markdown 文本。&lt;/li&gt;
+&lt;li&gt;石墨部分支持 Markdown 语法（如 &lt;code&gt;#&lt;/code&gt;
+转为标题），复杂格式需手动调整。&lt;/li&gt;
+&lt;li&gt;点击&amp;quot;文件&amp;rdquo; &amp;gt; &amp;ldquo;导出为 Word&amp;rdquo;，下载 &lt;code&gt;.docx&lt;/code&gt; 文件。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;有道云笔记 (&lt;/strong&gt;&lt;code&gt;note.youdao.com&lt;/code&gt;&lt;strong&gt;)&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;登录 &lt;code&gt;note.youdao.com&lt;/code&gt;，新建 Markdown 笔记。&lt;/li&gt;
+&lt;li&gt;输入或粘贴 Markdown 内容，实时预览效果。&lt;/li&gt;
+&lt;li&gt;点击右上角&amp;quot;更多&amp;quot; &amp;gt; &amp;ldquo;导出为 Word&amp;rdquo;，生成
+&lt;code&gt;.docx&lt;/code&gt;（可能需高级账户）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;优点&lt;/strong&gt;: 无需安装软件，方便、操作直观。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;缺点&lt;/strong&gt;: Markdown
+语法支持有限，复杂文档可能需手动调整；部分功能可能需付费解锁。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-pandoc&#34;&gt;2. Pandoc&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;描述&lt;/strong&gt;: Pandoc
+是一个开源命令行工具，被誉为&amp;quot;文档转换的瑞士军刀&amp;quot;，支持将 Markdown
+转换为 &lt;code&gt;.docx&lt;/code&gt; 等多种格式。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;使用方法&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;安装 Pandoc（Mac 可通过 &lt;code&gt;brew`` install ``pandoc&lt;/code&gt;，Windows
+可下载安装包）。&lt;/li&gt;
+&lt;li&gt;打开终端，运行命令：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;pandoc`` ~/Desktop/``你文件的命名``.md -o ~/Desktop/``你文件的命名``.docx&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>3.28资产结构</title>
+      <link>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E4%B8%AA%E4%BA%BA%E8%B5%84%E4%BA%A7/asset-structure-3-28/</link>
+      <pubDate>Fri, 28 Mar 2025 10:00:00 +0800</pubDate>
+      <guid>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E4%B8%AA%E4%BA%BA%E8%B5%84%E4%BA%A7/asset-structure-3-28/</guid>
+      <description>&lt;h3 id=&#34;当前资产分配&#34;&gt;当前资产分配&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;资产类别&lt;/th&gt;
+          &lt;th&gt;持仓比例&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;美国股票&lt;/td&gt;
+          &lt;td&gt;33.30%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;欧洲股票&lt;/td&gt;
+          &lt;td&gt;1.33%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;日经225&lt;/td&gt;
+          &lt;td&gt;2.65%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;恒生科技&lt;/td&gt;
+          &lt;td&gt;1.94%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;债券&lt;/td&gt;
+          &lt;td&gt;19.84%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;加密货币&lt;/td&gt;
+          &lt;td&gt;18.51%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;原油&lt;/td&gt;
+          &lt;td&gt;1.01%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;印度&lt;/td&gt;
+          &lt;td&gt;0.49%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;流动资金&lt;/td&gt;
+          &lt;td&gt;20.92%&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;操作及理由&#34;&gt;操作及理由&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;3月19日：转换2544 10年国开行债券至海外稳健配置&lt;/strong&gt;&lt;br&gt;
+由于中国国债利率短期上涨，加上美股下跌，整体收益率下降，个人认为仅持有中国国债存在风险。为平衡配置，将部分债券资金调整至美债与海外多元债券。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;3月12日：转换5193 10年政策性金融债至美债&lt;/strong&gt;&lt;br&gt;
+理由同上，旨在通过多元化债券配置降低风险。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;3月14日：停止定投美股（纳斯达克100和标普500），3月26日恢复定投&lt;/strong&gt;&lt;br&gt;
+自特朗普上台后，美股呈下跌趋势，因资金有限，暂停定投以等待更低价格的筹码。3月20日左右，美股连续上涨，个人认为时机已到，恢复定投。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>2.28资产结构</title>
+      <link>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E4%B8%AA%E4%BA%BA%E8%B5%84%E4%BA%A7/asset-structure-2-28/</link>
+      <pubDate>Fri, 28 Feb 2025 22:07:34 +0800</pubDate>
+      <guid>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E4%B8%AA%E4%BA%BA%E8%B5%84%E4%BA%A7/asset-structure-2-28/</guid>
+      <description>&lt;h3 id=&#34;当前资产分配&#34;&gt;当前资产分配&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;资产类别&lt;/th&gt;
+          &lt;th&gt;持仓比例&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;美国股票&lt;/td&gt;
+          &lt;td&gt;32.27%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;欧洲股票&lt;/td&gt;
+          &lt;td&gt;0.53%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;日经225&lt;/td&gt;
+          &lt;td&gt;0.51%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;恒生科技&lt;/td&gt;
+          &lt;td&gt;0.98%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;债券&lt;/td&gt;
+          &lt;td&gt;20.45%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;加密货币&lt;/td&gt;
+          &lt;td&gt;19.12%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;原油&lt;/td&gt;
+          &lt;td&gt;1.11%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;印度&lt;/td&gt;
+          &lt;td&gt;0.48%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;流动资金&lt;/td&gt;
+          &lt;td&gt;24.54%&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;说明&#34;&gt;说明&lt;/h3&gt;
+&lt;p&gt;过去的投资策略长时间后出现一定的混乱，经过减熵分析后，具体的操作分配如下：&lt;/p&gt;
+&lt;h3 id=&#34;目标持仓&#34;&gt;目标持仓&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;资产类别&lt;/th&gt;
+          &lt;th&gt;目标持仓&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;美国股票&lt;/td&gt;
+          &lt;td&gt;46.00%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;欧洲股票&lt;/td&gt;
+          &lt;td&gt;3.00%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;日经225&lt;/td&gt;
+          &lt;td&gt;5.00%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;恒生科技&lt;/td&gt;
+          &lt;td&gt;2.00%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;债券&lt;/td&gt;
+          &lt;td&gt;20.00%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;加密货币&lt;/td&gt;
+          &lt;td&gt;18.70%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;流动资金&lt;/td&gt;
+          &lt;td&gt;5.30%&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;分析&#34;&gt;分析&lt;/h3&gt;
+&lt;p&gt;对于一份长期配置的标的组合，需要满足以下条件：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;必须&lt;strong&gt;盈利&lt;/strong&gt;，平均下来每年都能稳定赚钱，最大限度盈利。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;风险&lt;/strong&gt;平衡，对于占大比例的标的，即使出现亏损，不能导致整个组合的波动太大，否则将影响心态。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;盈利分析&#34;&gt;盈利分析&lt;/h4&gt;
+&lt;p&gt;能够“最大限度盈利”的标的，选择美股。美国是目前科技创新的最前沿，产生0-1的突破。同时，美国也是如今的世界老大，在金融领域有相当的话语权。基于此，全球资金能够源源不断地流向美国，推动美国股票不断走高。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;最大比例投资：纳斯达克100与标普500&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;纳斯达克100（Invesco QQQ Trust, QQQ）&lt;/strong&gt;：&lt;br&gt;
+纳斯达克100指数由100家非金融类公司组成，主要集中在科技领域（如苹果占约10%、微软8%、英伟达6%）。近几年依旧遵循这个规律，历史年化回报率约10%-12%。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;标普500（SPDR S&amp;amp;P 500 ETF, SPY）&lt;/strong&gt;：&lt;br&gt;
+覆盖500家美国顶尖企业，行业分布广泛：科技（约30%）、金融（15%）、医疗（13%）、消费品（10%）等。年化收益约9%-11%，波动性低于纳斯达克（年均标准差约15% vs. 20%）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;风险平衡&#34;&gt;风险平衡&lt;/h4&gt;
+&lt;p&gt;为了达到“即使出现亏损，不能导致整个组合的波动太大”的要求，需要考虑以下几点：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. 降低标的组合的系统性风险：防止美国发生黑天鹅事件，需要寻找美国以外的市场&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;恒生科技&lt;/strong&gt;：&lt;br&gt;
+与美股相关度0.7，市盈率15-18倍。美国擅长0-1的研发，中国擅长以低成本完成1-100。近10年来的大方向可以99.9%确定为AI，大模型、人形机器人、自动驾驶等。从ChatGPT以来，大模型经历了飞速发展，目前最强的大模型grok3已使用合成数据训练，大模型爆发期走向终结，全面普及即将到来。这是中国擅长的，未来可能看到无数DeepSeek的出现。低成本普及AI，将高性能模型融入日常生活，部署至每个设备，这是中国能大规模做的事情。作为世界中不可忽视的一方，适当关注是必要的。&lt;br&gt;
+&lt;strong&gt;缺点&lt;/strong&gt;：需关注政策风险和市场波动。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;日经225&lt;/strong&gt;：&lt;br&gt;
+与美股相关度0.5，市盈率15-16倍。目前日本经济已走出泡沫阶段，摆脱通缩和停滞，进入稳定低增长状态。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;欧洲&lt;/strong&gt;：&lt;br&gt;
+与美股相关度0.6-0.7，市盈率16-18倍。老牌发达国家，经济较为稳定。&lt;br&gt;
+&lt;strong&gt;注&lt;/strong&gt;：对日经225和欧洲的买入理由不够明确，目前比例应尽可能小。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
