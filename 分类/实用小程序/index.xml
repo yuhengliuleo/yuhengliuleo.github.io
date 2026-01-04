@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>实用小程序 on Leo</title>
+    <link>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E5%AE%9E%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
+    <description>Recent content in 实用小程序 on Leo</description>
+    <generator>Hugo -- 0.146.5</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 02 Jan 2026 10:00:00 +0800</lastBuildDate>
+    <atom:link href="https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E5%AE%9E%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一个解决业余游泳训练中痛点的程序</title>
+      <link>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E5%AE%9E%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/starting-pistol-of-swimming/</link>
+      <pubDate>Fri, 02 Jan 2026 10:00:00 +0800</pubDate>
+      <guid>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E5%AE%9E%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/starting-pistol-of-swimming/</guid>
+      <description>&lt;p&gt;作为一个业余的游泳爱好者，在长期的游泳训练中，我发现了一个问题——很多时候包干、冲刺的计划从教练那边布置下来，但是由于身边队友也需要下水训练，导致包干的效果很差，包括模拟比赛发令场景也由于岸上没有人辅助，导致实际训练效率极低，甚至训练无法进行。&lt;/p&gt;
+&lt;p&gt;为了解决这个问题，今天我在上海香港路的一间小房子里面花费4个小时做出了一个能够解决这一痛点并且像模像样的网页程序，并已经将此程序部署到GitHub
+pages上。&lt;/p&gt;
+&lt;p&gt;网址：&lt;a href=&#34;https://yuhengliuleo.github.io/Starting-pistol-of-swimming&#34;&gt;https://yuhengliuleo.github.io/Starting-pistol-of-swimming&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;详细功能说明：&lt;a href=&#34;https://weixin.qq.com/sph/AY9L0grtA&#34;&gt;https://weixin.qq.com/sph/AY9L0grtA&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>制作一个外出假条网页（娱乐向）</title>
+      <link>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E5%AE%9E%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/fustuaffdiv/</link>
+      <pubDate>Sun, 25 May 2025 10:00:00 +0800</pubDate>
+      <guid>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E5%AE%9E%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/fustuaffdiv/</guid>
+      <description>&lt;p&gt;周日花了约四个半小时用AI手搓了一个能够生成以假乱真出门凭证的小程序，运行状况良好&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;说明：本程序仅供娱乐，禁止任何实际用途！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;#程序&lt;/p&gt;
+&lt;p&gt;仅限iPhone点击：https://www.icloud.com/shortcuts/8660e1030382499ea9380905da0dbafa&lt;/p&gt;
+&lt;p&gt;GitHub库：https://github.com/yuhengliuleo/fustuaffdiv&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>markdown格式转换word格式操作指南</title>
+      <link>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E5%AE%9E%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/markdown-convert-word/</link>
+      <pubDate>Tue, 01 Apr 2025 11:00:00 +0800</pubDate>
+      <guid>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E5%AE%9E%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/markdown-convert-word/</guid>
+      <description>&lt;p&gt;本文解析视频链接：&lt;/p&gt;
+&lt;p&gt;【AI输出带#**#**？分享我解决的三种方法】
+&lt;a href=&#34;https://www.bilibili.com/video/BV1FLZPYaEcg/?share_source=copy_web&amp;amp;vd_source=d96e19e5f16193c9ab4bbdd870971797&#34;&gt;https://www.bilibili.com/video/BV1FLZPYaEcg/?share_source=copy_web&amp;amp;vd_source=d96e19e5f16193c9ab4bbdd870971797&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Markdown
+是一种轻量级标记语言，因其简洁高效而广泛用于写作、笔记和文档记录，我们AI中复制的内容采用的就是markdown格式。然而，在需要与他人分享或提交正式文档时，通常需要将其转换为
+Word 文档（&lt;code&gt;.docx&lt;/code&gt;）格式。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;最简单的方法：
+直接在聊天框中输入提示词&amp;quot;不使用markdown格式输出，再生成一遍上面的内容&lt;/strong&gt;&amp;quot;&lt;/p&gt;
+&lt;h4 id=&#34;在线工具&#34;&gt;在线工具&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;工具及路径&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;腾讯文档 (&lt;/strong&gt;&lt;code&gt;docs.qq.com&lt;/code&gt;&lt;strong&gt;)&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;访问 &lt;code&gt;docs.qq.com&lt;/code&gt;，登录或直接使用。&lt;/li&gt;
+&lt;li&gt;新建空白文档，将 Markdown 内容粘贴进去。&lt;/li&gt;
+&lt;li&gt;手动调整格式（例如标题用&amp;quot;样式&amp;quot;设置为一级标题，列表用工具栏调整）。&lt;/li&gt;
+&lt;li&gt;点击&amp;quot;文件&amp;quot; &amp;gt; &amp;ldquo;下载&amp;rdquo; &amp;gt; &amp;ldquo;Microsoft Word (.docx)&amp;quot;，保存到本地。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;石墨文档 (&lt;/strong&gt;&lt;code&gt;shimo.im&lt;/code&gt;&lt;strong&gt;)&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;打开 &lt;code&gt;shimo.im&lt;/code&gt;，注册或登录。&lt;/li&gt;
+&lt;li&gt;创建新文档，粘贴 Markdown 文本。&lt;/li&gt;
+&lt;li&gt;石墨部分支持 Markdown 语法（如 &lt;code&gt;#&lt;/code&gt;
+转为标题），复杂格式需手动调整。&lt;/li&gt;
+&lt;li&gt;点击&amp;quot;文件&amp;rdquo; &amp;gt; &amp;ldquo;导出为 Word&amp;rdquo;，下载 &lt;code&gt;.docx&lt;/code&gt; 文件。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;有道云笔记 (&lt;/strong&gt;&lt;code&gt;note.youdao.com&lt;/code&gt;&lt;strong&gt;)&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;登录 &lt;code&gt;note.youdao.com&lt;/code&gt;，新建 Markdown 笔记。&lt;/li&gt;
+&lt;li&gt;输入或粘贴 Markdown 内容，实时预览效果。&lt;/li&gt;
+&lt;li&gt;点击右上角&amp;quot;更多&amp;quot; &amp;gt; &amp;ldquo;导出为 Word&amp;rdquo;，生成
+&lt;code&gt;.docx&lt;/code&gt;（可能需高级账户）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;优点&lt;/strong&gt;: 无需安装软件，方便、操作直观。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;缺点&lt;/strong&gt;: Markdown
+语法支持有限，复杂文档可能需手动调整；部分功能可能需付费解锁。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-pandoc&#34;&gt;2. Pandoc&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;描述&lt;/strong&gt;: Pandoc
+是一个开源命令行工具，被誉为&amp;quot;文档转换的瑞士军刀&amp;quot;，支持将 Markdown
+转换为 &lt;code&gt;.docx&lt;/code&gt; 等多种格式。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;使用方法&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;安装 Pandoc（Mac 可通过 &lt;code&gt;brew`` install ``pandoc&lt;/code&gt;，Windows
+可下载安装包）。&lt;/li&gt;
+&lt;li&gt;打开终端，运行命令：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;pandoc`` ~/Desktop/``你文件的命名``.md -o ~/Desktop/``你文件的命名``.docx&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
