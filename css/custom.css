@@ -1,0 +1,25 @@
+/* 图片注释样式 - 楷体 + 居中 */
+.img-caption {
+    font-family: "KaiTi", "楷体", "STKaiti", serif;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+    color: #333;
+    margin: 0.3em 0 1em 0;
+}
+
+/* 所有 center 标签默认居中 */
+center {
+    margin: 0.5em 0;
+}
+
+/* 表格整体居中 */
+article table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+article th, article td {
+  padding: 6px 12px;
+}
