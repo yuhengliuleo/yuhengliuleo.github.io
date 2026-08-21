@@ -49,8 +49,11 @@ a.mimo-nav-logo{display:inline-block}
 .mimo-article th{background:rgba(0,0,0,0.05);font-weight:600}
 .mimo-article hr{border:none;border-top:1px solid rgba(0,0,0,0.12);margin:40px 0}
 .mimo-article img{margin:24px 0;border:1px solid rgba(0,0,0,0.08)}
-.mimo-back{display:inline-block;margin-top:48px;padding:12px 24px;border:1px solid #000;font-size:14px;font-weight:600;transition:all 0.2s}
+.mimo-back{display:inline-block;padding:12px 24px;border:1px solid #000;font-size:14px;font-weight:600;transition:all 0.2s;cursor:pointer;background:none;font-family:inherit}
 .mimo-back:hover{background:#000;color:#fff}
+.mimo-article-actions{display:flex;justify-content:space-between;align-items:center;margin-top:48px}
+.mimo-download{color:#000}
+.mimo-download:disabled{opacity:0.5;cursor:wait}
 @media(max-width:1024px){.mimo-article{padding:48px 48px 80px}.mimo-article h1{font-size:38px}}
 @media(max-width:768px){.mimo-article{padding:36px 24px 60px}.mimo-article h1{font-size:30px}.mimo-article h2{font-size:22px}.mimo-article p,.mimo-article li{font-size:16px}.mimo-article table{font-size:14px}}
 @media(max-width:430px){.mimo-article{padding:28px 16px 48px}.mimo-article h1{font-size:24px}}
@@ -374,8 +377,65 @@ Greenwald对企业估值所使用的三层价值模型，得到了一个我称�
 <p>写到这里，该做一个总结了。我对原油的是片面的，太多的数据没有考虑进去。上文“钉子模型”中所谓的成本、供需的博弈状态，有太多的数据能够体现了，有太多复杂的数学模型能够推算出详细的价格信息。但是，对于我来讲，至少是现在来说，并不需要准确的跟踪所有的信息。唯一需要做的，就是多关注国际新闻，多多长个心眼，想一想各事件与原油价格的关系，另外就是多关注原油供需领域的发展状况。虽然都是马后炮，但是至少能对原油市场多一分了解。</p>
 <p>分析来分析去，对我来讲，所谓的原油投机，其实就是买了原油彩票，运气好了赚点小钱。如果各种参数都缺失，那么估值也就失去了任何的意义，是吧？（笑）</p>
 
-  <a class="mimo-back" href="/categories/%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/">← 返回 研究报告</a>
+  <div class="mimo-article-actions">
+    <a class="mimo-back" href="/categories/%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/">← 返回 研究报告</a>
+    <button class="mimo-back mimo-download" onclick="downloadPDF()">↓ 下载 PDF</button>
+  </div>
 </article>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
+<script>
+function downloadPDF() {
+  var btn = document.querySelector('.mimo-download');
+  btn.textContent = '生成中...';
+  btn.disabled = true;
+
+  var now = new Date();
+  var timestamp = now.getFullYear() + '-' +
+    String(now.getMonth()+1).padStart(2,'0') + '-' +
+    String(now.getDate()).padStart(2,'0') + ' ' +
+    String(now.getHours()).padStart(2,'0') + ':' +
+    String(now.getMinutes()).padStart(2,'0');
+
+  var container = document.createElement('div');
+  container.style.cssText = 'font-family:-apple-system,BlinkMacSystemFont,sans-serif;color:#333;padding:20px;max-width:800px;';
+
+  var title = document.querySelector('.mimo-article h1');
+  var meta = document.querySelector('.mimo-article-meta');
+  var article = document.querySelector('.mimo-article');
+
+  
+  var bodyHTML = '';
+  var children = article.children;
+  for (var i = 0; i < children.length; i++) {
+    var el = children[i];
+    if (!el.classList.contains('mimo-article-meta') &&
+        !el.classList.contains('mimo-article-actions') &&
+        el.tagName !== 'H1') {
+      bodyHTML += el.outerHTML;
+    }
+  }
+
+  container.innerHTML =
+    '<h1 style="font-size:28px;color:#000;margin-bottom:12px;line-height:1.3">' + title.textContent + '</h1>' +
+    '<p style="color:#999;font-size:13px;margin-bottom:24px">' + meta.textContent + '</p>' +
+    '<div style="font-size:15px;line-height:1.8;color:#333">' + bodyHTML + '</div>' +
+    '<p style="color:#999;font-size:11px;margin-top:40px;text-align:right;border-top:1px solid #eee;padding-top:12px">PDF 生成时间：' + timestamp + '</p>';
+
+  var opt = {
+    margin: [15, 15, 15, 15],
+    filename: title.textContent + '.pdf',
+    image: { type: 'jpeg', quality: 0.95 },
+    html2canvas: { scale: 2, useCORS: true },
+    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+  };
+
+  html2pdf().set(opt).from(container).save().then(function() {
+    btn.textContent = '↓ 下载 PDF';
+    btn.disabled = false;
+  });
+}
+</script>
 
   <footer class="mimo-footer">
     <span>© 2025-2026 Leo. All Rights Reserved</span>
