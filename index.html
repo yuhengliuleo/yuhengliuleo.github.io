@@ -1300,13 +1300,14 @@ img { display: block; max-width: 100%; }
 
   crackZone.addEventListener('click', function () {
     if (!isFlipped) {
-      altLayer.style.clipPath = 'circle(0px at -300px -300px)';
+      altLayer.style.visibility = 'hidden';
       flipInner.style.transform = 'rotateX(180deg)';
       isFlipped = true;
     }
   });
   backClickZone.addEventListener('click', function () {
     if (isFlipped) {
+      altLayer.style.visibility = 'visible';
       flipInner.style.transform = 'rotateX(0deg)';
       isFlipped = false;
     }
