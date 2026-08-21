@@ -1300,6 +1300,7 @@ img { display: block; max-width: 100%; }
 
   crackZone.addEventListener('click', function () {
     if (!isFlipped) {
+      altLayer.style.clipPath = 'circle(0px at -300px -300px)';
       flipInner.style.transform = 'rotateX(180deg)';
       isFlipped = true;
     }
