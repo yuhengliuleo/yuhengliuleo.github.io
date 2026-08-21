@@ -166,7 +166,7 @@ img { display: block; max-width: 100%; }
   z-index: 10;
   will-change: clip-path;
   clip-path: circle(0px at -300px -300px);
-  background: rgba(0, 0, 0, 0.62);
+  background: #000;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -1314,49 +1314,27 @@ img { display: block; max-width: 100%; }
   
   var altLayer = document.getElementById('altLayer');
   var heroFront = document.getElementById('heroFront');
-  var curX = -300, curY = -300;
-  var targetX = -300, targetY = -300;
-  var rafId = null;
-
-  function updateSpot() {
-    curX += (targetX - curX) * 0.16;
-    curY += (targetY - curY) * 0.16;
-    altLayer.style.clipPath = 'circle(120px at ' + curX + 'px ' + curY + 'px)';
-    if (Math.abs(targetX - curX) > 0.5 || Math.abs(targetY - curY) > 0.5) {
-      rafId = requestAnimationFrame(updateSpot);
-    } else {
-      rafId = null;
-    }
-  }
-
-  function startSpot() {
-    if (!rafId) rafId = requestAnimationFrame(updateSpot);
-  }
 
   heroFront.addEventListener('mousemove', function (e) {
     if (isFlipped) return;
     var rect = heroFront.getBoundingClientRect();
-    targetX = e.clientX - rect.left;
-    targetY = e.clientY - rect.top;
-    startSpot();
+    var x = e.clientX - rect.left;
+    var y = e.clientY - rect.top;
+    altLayer.style.clipPath = 'circle(120px at ' + x + 'px ' + y + 'px)';
   });
   heroFront.addEventListener('mouseleave', function () {
-    targetX = -300;
-    targetY = -300;
-    startSpot();
+    altLayer.style.clipPath = 'circle(0px at -300px -300px)';
   });
   heroFront.addEventListener('touchmove', function (e) {
     if (isFlipped) return;
     var t = e.touches[0];
     var rect = heroFront.getBoundingClientRect();
-    targetX = t.clientX - rect.left;
-    targetY = t.clientY - rect.top;
-    startSpot();
+    var x = t.clientX - rect.left;
+    var y = t.clientY - rect.top;
+    altLayer.style.clipPath = 'circle(120px at ' + x + 'px ' + y + 'px)';
   });
   heroFront.addEventListener('touchend', function () {
-    targetX = -300;
-    targetY = -300;
-    startSpot();
+    altLayer.style.clipPath = 'circle(0px at -300px -300px)';
   });
 
   
