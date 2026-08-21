@@ -1314,14 +1314,14 @@ img { display: block; max-width: 100%; }
 
   crackZone.addEventListener('click', function () {
     if (!isFlipped) {
-      altLayer.style.visibility = 'hidden';
+      heroFront.style.visibility = 'hidden';
       flipInner.style.transform = 'rotateX(180deg)';
       isFlipped = true;
     }
   });
   backClickZone.addEventListener('click', function () {
     if (isFlipped) {
-      altLayer.style.visibility = 'visible';
+      heroFront.style.visibility = 'visible';
       flipInner.style.transform = 'rotateX(0deg)';
       isFlipped = false;
     }
