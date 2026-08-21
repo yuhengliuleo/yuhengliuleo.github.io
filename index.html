@@ -1320,7 +1320,7 @@ img { display: block; max-width: 100%; }
     var rect = heroFront.getBoundingClientRect();
     var x = e.clientX - rect.left;
     var y = e.clientY - rect.top;
-    altLayer.style.clipPath = 'circle(120px at ' + x + 'px ' + y + 'px)';
+    altLayer.style.clipPath = 'circle(180px at ' + x + 'px ' + y + 'px)';
   });
   heroFront.addEventListener('mouseleave', function () {
     altLayer.style.clipPath = 'circle(0px at -300px -300px)';
@@ -1331,7 +1331,7 @@ img { display: block; max-width: 100%; }
     var rect = heroFront.getBoundingClientRect();
     var x = t.clientX - rect.left;
     var y = t.clientY - rect.top;
-    altLayer.style.clipPath = 'circle(120px at ' + x + 'px ' + y + 'px)';
+    altLayer.style.clipPath = 'circle(180px at ' + x + 'px ' + y + 'px)';
   });
   heroFront.addEventListener('touchend', function () {
     altLayer.style.clipPath = 'circle(0px at -300px -300px)';
