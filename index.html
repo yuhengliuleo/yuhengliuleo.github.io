@@ -163,8 +163,10 @@ img { display: block; max-width: 100%; }
  
 .mimo-alt-layer {
   pointer-events: none;
-  z-index: 5;
-  background: #000;
+  z-index: 10;
+  will-change: clip-path;
+  clip-path: circle(0px at -300px -300px);
+  background: rgba(0, 0, 0, 0.62);
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -172,7 +174,6 @@ img { display: block; max-width: 100%; }
   display: flex;
   position: absolute;
   top: 0; left: 0;
-  opacity: 0;
 }
 .mimo-text-pattern-inverted {
   pointer-events: none;
@@ -1313,147 +1314,49 @@ img { display: block; max-width: 100%; }
   
   var altLayer = document.getElementById('altLayer');
   var heroFront = document.getElementById('heroFront');
-  var isTracking = false;
+  var curX = -300, curY = -300;
+  var targetX = -300, targetY = -300;
+  var rafId = null;
 
-  
-  var svgNS = 'http://www.w3.org/2000/svg';
-  var svg = document.createElementNS(svgNS, 'svg');
-  svg.setAttribute('width', '100%');
-  svg.setAttribute('height', '100%');
-  svg.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:10;';
-  heroFront.appendChild(svg);
-
-  
-  var defs = document.createElementNS(svgNS, 'defs');
-  var filter = document.createElementNS(svgNS, 'filter');
-  filter.setAttribute('id', 'goo');
-  var blur = document.createElementNS(svgNS, 'feGaussianBlur');
-  blur.setAttribute('in', 'SourceGraphic');
-  blur.setAttribute('stdDeviation', '12');
-  blur.setAttribute('result', 'blur');
-  var colorMatrix = document.createElementNS(svgNS, 'feColorMatrix');
-  colorMatrix.setAttribute('in', 'blur');
-  colorMatrix.setAttribute('mode', 'matrix');
-  colorMatrix.setAttribute('values', '1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9');
-  colorMatrix.setAttribute('result', 'goo');
-  var composite = document.createElementNS(svgNS, 'feComposite');
-  composite.setAttribute('in', 'SourceGraphic');
-  composite.setAttribute('in2', 'goo');
-  composite.setAttribute('operator', 'atop');
-  filter.appendChild(blur);
-  filter.appendChild(colorMatrix);
-  filter.appendChild(composite);
-  defs.appendChild(filter);
-  svg.appendChild(defs);
-
-  
-  var blobGroup = document.createElementNS(svgNS, 'g');
-  blobGroup.setAttribute('filter', 'url(#goo)');
-  svg.appendChild(blobGroup);
-
-  
-  var trailCount = 8;
-  var blobs = [];
-  for (var bi = 0; bi < trailCount; bi++) {
-    var circle = document.createElementNS(svgNS, 'circle');
-    circle.setAttribute('cx', '-200');
-    circle.setAttribute('cy', '-200');
-    circle.setAttribute('r', bi === 0 ? '70' : String(55 - bi * 5));
-    circle.setAttribute('fill', '#000');
-    circle.style.opacity = bi === 0 ? '1' : String(0.7 - bi * 0.07);
-    blobGroup.appendChild(circle);
-    blobs.push({ el: circle, x: -200, y: -200, vx: 0, vy: 0 });
+  function updateSpot() {
+    curX += (targetX - curX) * 0.16;
+    curY += (targetY - curY) * 0.16;
+    altLayer.style.clipPath = 'circle(120px at ' + curX + 'px ' + curY + 'px)';
+    if (Math.abs(targetX - curX) > 0.5 || Math.abs(targetY - curY) > 0.5) {
+      rafId = requestAnimationFrame(updateSpot);
+    } else {
+      rafId = null;
+    }
   }
 
-  
-  var posHistory = [];
-  var maxTrailHistory = 30;
-  var rafBlobId = null;
-
-  function updateBlobs() {
-    
-    if (posHistory.length > 0) {
-      var target = posHistory[posHistory.length - 1];
-      blobs[0].x += (target.x - blobs[0].x) * 0.3;
-      blobs[0].y += (target.y - blobs[0].y) * 0.3;
-      blobs[0].vx = target.x - blobs[0].x;
-      blobs[0].vy = target.y - blobs[0].y;
-    }
-
-    
-    for (var i = 1; i < trailCount; i++) {
-      var leader = blobs[i - 1];
-      var follower = blobs[i];
-      var delay = 0.15 - i * 0.01;
-      follower.x += (leader.x - follower.x) * delay;
-      follower.y += (leader.y - follower.y) * delay;
-
-      
-      var dx = leader.x - follower.x;
-      var dy = leader.y - follower.y;
-      var dist = Math.sqrt(dx * dx + dy * dy);
-      var baseR = 55 - i * 5;
-      var stretch = Math.min(dist * 0.3, 25);
-      var angle = Math.atan2(dy, dx);
-
-      
-      var scaleX = 1 + stretch / baseR;
-      var scaleY = 1 - stretch / baseR * 0.3;
-      follower.el.setAttribute('r', String(baseR));
-      follower.el.style.transform = 'rotate(' + angle + 'rad) scale(' + scaleX + ',' + scaleY + ')';
-      follower.el.style.transformOrigin = follower.x + 'px ' + follower.y + 'px';
-    }
-
-    
-    for (var j = 0; j < trailCount; j++) {
-      blobs[j].el.setAttribute('cx', String(blobs[j].x));
-      blobs[j].el.setAttribute('cy', String(blobs[j].y));
-    }
-
-    
-    if (posHistory.length > maxTrailHistory) {
-      posHistory = posHistory.slice(posHistory.length - maxTrailHistory);
-    }
-
-    if (isTracking || posHistory.length > 1) {
-      rafBlobId = requestAnimationFrame(updateBlobs);
-    } else {
-      
-      for (var k = 0; k < trailCount; k++) {
-        blobs[k].x = -200;
-        blobs[k].y = -200;
-        blobs[k].el.setAttribute('cx', '-200');
-        blobs[k].el.setAttribute('cy', '-200');
-      }
-      rafBlobId = null;
-    }
+  function startSpot() {
+    if (!rafId) rafId = requestAnimationFrame(updateSpot);
   }
 
   heroFront.addEventListener('mousemove', function (e) {
     if (isFlipped) return;
     var rect = heroFront.getBoundingClientRect();
-    posHistory.push({ x: e.clientX - rect.left, y: e.clientY - rect.top });
-    if (!rafBlobId) {
-      isTracking = true;
-      rafBlobId = requestAnimationFrame(updateBlobs);
-    }
+    targetX = e.clientX - rect.left;
+    targetY = e.clientY - rect.top;
+    startSpot();
   });
   heroFront.addEventListener('mouseleave', function () {
-    isTracking = false;
+    targetX = -300;
+    targetY = -300;
+    startSpot();
   });
-
   heroFront.addEventListener('touchmove', function (e) {
     if (isFlipped) return;
     var t = e.touches[0];
     var rect = heroFront.getBoundingClientRect();
-    posHistory.push({ x: t.clientX - rect.left, y: t.clientY - rect.top });
-    if (!rafBlobId) {
-      isTracking = true;
-      rafBlobId = requestAnimationFrame(updateBlobs);
-    }
+    targetX = t.clientX - rect.left;
+    targetY = t.clientY - rect.top;
+    startSpot();
   });
   heroFront.addEventListener('touchend', function () {
-    isTracking = false;
+    targetX = -300;
+    targetY = -300;
+    startSpot();
   });
 
   
