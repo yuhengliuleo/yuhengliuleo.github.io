@@ -311,86 +311,118 @@ a.mimo-nav-logo{display:inline-block}
 </article>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.2/jspdf.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script>
 function downloadPDF() {
   var btn = document.getElementById('downloadBtn');
   btn.textContent = '生成中...';
   btn.disabled = true;
 
-  var now = new Date();
-  var ts = now.getFullYear() + '-' +
-    String(now.getMonth()+1).padStart(2,'0') + '-' +
-    String(now.getDate()).padStart(2,'0') + ' ' +
-    String(now.getHours()).padStart(2,'0') + ':' +
-    String(now.getMinutes()).padStart(2,'0');
-
-  
-  var actions = document.querySelector('.mimo-article-actions');
-  actions.style.display = 'none';
-
-  
-  var footer = document.createElement('div');
-  footer.style.cssText = 'text-align:right;font-size:11px;color:#999;margin-top:32px;padding-top:12px;border-top:1px solid #eee';
-  footer.textContent = 'PDF 生成时间：' + ts;
-  var article = document.querySelector('.mimo-article');
-  article.appendChild(footer);
-
-  
-  var origBg = article.style.background;
-  article.style.background = '#fff';
-
-  html2canvas(article, {
-    scale: 2,
-    useCORS: true,
-    backgroundColor: '#ffffff',
-    logging: false
-  }).then(function(canvas) {
-    
-    article.style.background = origBg;
-    article.removeChild(footer);
-    actions.style.display = '';
-
+  try {
     var jsPDF = window.jspdf.jsPDF;
-    var imgData = canvas.toDataURL('image/jpeg', 0.95);
     var pdf = new jsPDF('p', 'mm', 'a4');
-    var pdfWidth = pdf.internal.pageSize.getWidth();
-    var pdfHeight = pdf.internal.pageSize.getHeight();
-    var imgWidth = pdfWidth - 20; 
-    var imgHeight = canvas.height * imgWidth / canvas.width;
+    var pageWidth = pdf.internal.pageSize.getWidth();
+    var pageHeight = pdf.internal.pageSize.getHeight();
+    var margin = 15;
+    var maxWidth = pageWidth - margin * 2;
+    var y = margin;
 
-    var y = 10; 
+    var article = document.querySelector('.mimo-article');
+    var title = article.querySelector('h1').textContent;
+    var meta = article.querySelector('.mimo-article-meta').textContent;
+
     
-    var pageImgHeight = (pdfHeight - 20) * canvas.width / imgWidth;
-    var srcY = 0;
+    pdf.setFont('helvetica', 'bold');
+    pdf.setFontSize(22);
+    var titleLines = pdf.splitTextToSize(title, maxWidth);
+    pdf.text(titleLines, margin, y);
+    y += titleLines.length * 10;
 
-    while (srcY < canvas.height) {
-      var sliceH = Math.min(pageImgHeight, canvas.height - srcY);
-      var sliceCanvas = document.createElement('canvas');
-      sliceCanvas.width = canvas.width;
-      sliceCanvas.height = sliceH;
-      var ctx = sliceCanvas.getContext('2d');
-      ctx.drawImage(canvas, 0, srcY, canvas.width, sliceH, 0, 0, canvas.width, sliceH);
-      var sliceData = sliceCanvas.toDataURL('image/jpeg', 0.95);
-      var sliceImgH = sliceH * imgWidth / canvas.width;
+    
+    pdf.setFont('helvetica', 'normal');
+    pdf.setFontSize(10);
+    pdf.setTextColor(150);
+    pdf.text(meta, margin, y);
+    y += 10;
+    pdf.setTextColor(0);
 
-      if (srcY > 0) pdf.addPage();
-      pdf.addImage(sliceData, 'JPEG', 10, 10, imgWidth, sliceImgH);
-      srcY += sliceH;
+    
+    pdf.setDrawColor(200);
+    pdf.line(margin, y, pageWidth - margin, y);
+    y += 8;
+
+    
+    var contentArea = article.querySelector('.mimo-article-actions').previousElementSibling;
+    var elements = article.querySelectorAll('p, h2, h3, h4, li, td, th, blockquote');
+
+    pdf.setFont('helvetica', 'normal');
+    pdf.setFontSize(11);
+
+    for (var i = 0; i < elements.length; i++) {
+      var el = elements[i];
+      var text = el.textContent.trim();
+      if (!text) continue;
+
+      
+      var tag = el.tagName.toLowerCase();
+      if (tag === 'h2') {
+        pdf.setFont('helvetica', 'bold');
+        pdf.setFontSize(16);
+        y += 6;
+      } else if (tag === 'h3' || tag === 'h4') {
+        pdf.setFont('helvetica', 'bold');
+        pdf.setFontSize(13);
+        y += 4;
+      } else if (tag === 'li') {
+        text = '  • ' + text;
+        pdf.setFont('helvetica', 'normal');
+        pdf.setFontSize(11);
+      } else if (tag === 'blockquote') {
+        pdf.setFont('helvetica', 'italic');
+        pdf.setFontSize(10);
+        pdf.setTextColor(80);
+        text = '  ' + text;
+      } else {
+        pdf.setFont('helvetica', 'normal');
+        pdf.setFontSize(11);
+        pdf.setTextColor(0);
+      }
+
+      var lines = pdf.splitTextToSize(text, maxWidth);
+      for (var j = 0; j < lines.length; j++) {
+        if (y > pageHeight - margin) {
+          pdf.addPage();
+          y = margin;
+        }
+        pdf.text(lines[j], margin, y);
+        y += 6;
+      }
+      y += 3;
+      pdf.setTextColor(0);
     }
 
-    var title = document.querySelector('.mimo-article h1').textContent || 'article';
+    
+    var now = new Date();
+    var ts = now.getFullYear() + '-' +
+      String(now.getMonth()+1).padStart(2,'0') + '-' +
+      String(now.getDate()).padStart(2,'0') + ' ' +
+      String(now.getHours()).padStart(2,'0') + ':' +
+      String(now.getMinutes()).padStart(2,'0');
+
+    if (y > pageHeight - margin - 10) pdf.addPage();
+    pdf.setFontSize(9);
+    pdf.setTextColor(150);
+    pdf.text('PDF 生成时间：' + ts, pageWidth - margin, pageHeight - 10, { align: 'right' });
+
     pdf.save(title + '.pdf');
     btn.textContent = '↓ 下载 PDF';
     btn.disabled = false;
-  }).catch(function(err) {
-    article.style.background = origBg;
-    if (footer.parentNode) article.removeChild(footer);
-    actions.style.display = '';
+
+  } catch(e) {
+    console.error(e);
     btn.textContent = '↓ 下载 PDF';
     btn.disabled = false;
-    alert('PDF 生成失败，请重试');
-  });
+    alert('PDF 生成失败：' + e.message);
+  }
 }
 </script>
 
