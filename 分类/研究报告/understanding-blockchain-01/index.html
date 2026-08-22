@@ -57,6 +57,19 @@ a.mimo-nav-logo{display:inline-block}
 @media(max-width:1024px){.mimo-article{padding:48px 48px 80px}.mimo-article h1{font-size:38px}}
 @media(max-width:768px){.mimo-article{padding:36px 24px 60px}.mimo-article h1{font-size:30px}.mimo-article h2{font-size:22px}.mimo-article p,.mimo-article li{font-size:16px}.mimo-article table{font-size:14px}}
 @media(max-width:430px){.mimo-article{padding:28px 16px 48px}.mimo-article h1{font-size:24px}}
+.mimo-print-footer{display:none}
+@media print{
+  .mimo-nav,.mimo-footer,.mimo-article-actions{display:none!important}
+  .mimo-page{max-width:none}
+  .mimo-article{padding:0;max-width:none;margin:0}
+  .mimo-article h1{font-size:28px}
+  .mimo-article p,.mimo-article li{font-size:14px}
+  .mimo-article table{font-size:12px}
+  .mimo-article img{max-width:100%!important;page-break-inside:avoid}
+  .mimo-print-footer{display:block!important;text-align:right;font-size:11px;color:#999;margin-top:32px;padding-top:12px;border-top:1px solid #eee}
+  body{background:#fff!important}
+  .mimo-article-meta a{color:#000!important;text-decoration:none}
+}
 </style>
 
 </head>
@@ -227,55 +240,20 @@ Z平台将交易数据（如订单号、金额、交易时间、用户和商家�
     <a class="mimo-back" href="/categories/%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/">← 返回 研究报告</a>
     <button class="mimo-back mimo-download" onclick="downloadPDF()">↓ 下载 PDF</button>
   </div>
+  <div class="mimo-print-footer" id="printFooter"></div>
 </article>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
 <script>
 function downloadPDF() {
-  var btn = document.querySelector('.mimo-download');
-  btn.textContent = '生成中...';
-  btn.disabled = true;
-
+  
   var now = new Date();
-  var timestamp = now.getFullYear() + '-' +
+  var ts = now.getFullYear() + '-' +
     String(now.getMonth()+1).padStart(2,'0') + '-' +
     String(now.getDate()).padStart(2,'0') + ' ' +
     String(now.getHours()).padStart(2,'0') + ':' +
     String(now.getMinutes()).padStart(2,'0');
-
-  
-  var footer = document.createElement('p');
-  footer.style.cssText = 'color:#999;font-size:11px;margin-top:32px;text-align:right;border-top:1px solid #eee;padding-top:12px';
-  footer.textContent = 'PDF 生成时间：' + timestamp;
-
-  
-  var article = document.querySelector('.mimo-article');
-  var actions = article.querySelector('.mimo-article-actions');
-  
-  if (actions) actions.style.display = 'none';
-  
-  article.appendChild(footer);
-
-  var opt = {
-    margin: [15, 15, 15, 15],
-    filename: document.querySelector('.mimo-article h1').textContent + '.pdf',
-    image: { type: 'jpeg', quality: 0.95 },
-    html2canvas: { scale: 2, useCORS: true, logging: false },
-    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-  };
-
-  html2pdf().set(opt).from(article).save().then(function() {
-    
-    article.removeChild(footer);
-    if (actions) actions.style.display = '';
-    btn.textContent = '↓ 下载 PDF';
-    btn.disabled = false;
-  }).catch(function() {
-    article.removeChild(footer);
-    if (actions) actions.style.display = '';
-    btn.textContent = '↓ 下载 PDF';
-    btn.disabled = false;
-  });
+  document.getElementById('printFooter').textContent = 'PDF 生成时间：' + ts;
+  window.print();
 }
 </script>
 
