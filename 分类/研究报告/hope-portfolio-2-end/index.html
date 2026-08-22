@@ -57,6 +57,24 @@ a.mimo-nav-logo{display:inline-block}
 @media(max-width:1024px){.mimo-article{padding:48px 48px 80px}.mimo-article h1{font-size:38px}}
 @media(max-width:768px){.mimo-article{padding:36px 24px 60px}.mimo-article h1{font-size:30px}.mimo-article h2{font-size:22px}.mimo-article p,.mimo-article li{font-size:16px}.mimo-article table{font-size:14px}}
 @media(max-width:430px){.mimo-article{padding:28px 16px 48px}.mimo-article h1{font-size:24px}}
+.pdf-timestamp{display:none}
+@media print{
+  body{background:#fff!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .mimo-nav,.mimo-footer,.mimo-article-actions{display:none!important}
+  .mimo-page{max-width:none!important}
+  .mimo-article{padding:0!important;max-width:none!important;margin:0!important}
+  .mimo-article h1{font-size:26px!important;color:#000!important}
+  .mimo-article-meta{color:#666!important}
+  .mimo-article-meta a{color:#000!important;text-decoration:none!important}
+  .mimo-article p{color:#222!important;font-size:13px!important}
+  .mimo-article h2{font-size:18px!important;color:#000!important}
+  .mimo-article h3{font-size:15px!important;color:#000!important}
+  .mimo-article table{font-size:12px!important}
+  .mimo-article td,.mimo-article th{border:1px solid #ccc!important;padding:6px 10px!important}
+  .mimo-article img{max-width:100%!important}
+  .mimo-article blockquote{border-left:3px solid #999!important}
+  .pdf-timestamp{display:block!important;text-align:right!important;font-size:10px!important;color:#999!important;margin-top:24px!important;padding-top:8px!important;border-top:1px solid #ddd!important}
+}
 </style>
 
 </head>
@@ -206,119 +224,24 @@ a.mimo-nav-logo{display:inline-block}
   </div>
 </article>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.2/jspdf.umd.min.js"></script>
 <script>
 function downloadPDF() {
-  var btn = document.getElementById('downloadBtn');
-  btn.textContent = '生成中...';
-  btn.disabled = true;
+  var now = new Date();
+  var ts = now.getFullYear() + '-' +
+    String(now.getMonth()+1).padStart(2,'0') + '-' +
+    String(now.getDate()).padStart(2,'0') + ' ' +
+    String(now.getHours()).padStart(2,'0') + ':' +
+    String(now.getMinutes()).padStart(2,'0');
 
-  try {
-    var jsPDF = window.jspdf.jsPDF;
-    var pdf = new jsPDF('p', 'mm', 'a4');
-    var pageWidth = pdf.internal.pageSize.getWidth();
-    var pageHeight = pdf.internal.pageSize.getHeight();
-    var margin = 15;
-    var maxWidth = pageWidth - margin * 2;
-    var y = margin;
-
-    var article = document.querySelector('.mimo-article');
-    var title = article.querySelector('h1').textContent;
-    var meta = article.querySelector('.mimo-article-meta').textContent;
-
-    
-    pdf.setFont('helvetica', 'bold');
-    pdf.setFontSize(22);
-    var titleLines = pdf.splitTextToSize(title, maxWidth);
-    pdf.text(titleLines, margin, y);
-    y += titleLines.length * 10;
-
-    
-    pdf.setFont('helvetica', 'normal');
-    pdf.setFontSize(10);
-    pdf.setTextColor(150);
-    pdf.text(meta, margin, y);
-    y += 10;
-    pdf.setTextColor(0);
-
-    
-    pdf.setDrawColor(200);
-    pdf.line(margin, y, pageWidth - margin, y);
-    y += 8;
-
-    
-    var contentArea = article.querySelector('.mimo-article-actions').previousElementSibling;
-    var elements = article.querySelectorAll('p, h2, h3, h4, li, td, th, blockquote');
-
-    pdf.setFont('helvetica', 'normal');
-    pdf.setFontSize(11);
-
-    for (var i = 0; i < elements.length; i++) {
-      var el = elements[i];
-      var text = el.textContent.trim();
-      if (!text) continue;
-
-      
-      var tag = el.tagName.toLowerCase();
-      if (tag === 'h2') {
-        pdf.setFont('helvetica', 'bold');
-        pdf.setFontSize(16);
-        y += 6;
-      } else if (tag === 'h3' || tag === 'h4') {
-        pdf.setFont('helvetica', 'bold');
-        pdf.setFontSize(13);
-        y += 4;
-      } else if (tag === 'li') {
-        text = '  • ' + text;
-        pdf.setFont('helvetica', 'normal');
-        pdf.setFontSize(11);
-      } else if (tag === 'blockquote') {
-        pdf.setFont('helvetica', 'italic');
-        pdf.setFontSize(10);
-        pdf.setTextColor(80);
-        text = '  ' + text;
-      } else {
-        pdf.setFont('helvetica', 'normal');
-        pdf.setFontSize(11);
-        pdf.setTextColor(0);
-      }
-
-      var lines = pdf.splitTextToSize(text, maxWidth);
-      for (var j = 0; j < lines.length; j++) {
-        if (y > pageHeight - margin) {
-          pdf.addPage();
-          y = margin;
-        }
-        pdf.text(lines[j], margin, y);
-        y += 6;
-      }
-      y += 3;
-      pdf.setTextColor(0);
-    }
-
-    
-    var now = new Date();
-    var ts = now.getFullYear() + '-' +
-      String(now.getMonth()+1).padStart(2,'0') + '-' +
-      String(now.getDate()).padStart(2,'0') + ' ' +
-      String(now.getHours()).padStart(2,'0') + ':' +
-      String(now.getMinutes()).padStart(2,'0');
-
-    if (y > pageHeight - margin - 10) pdf.addPage();
-    pdf.setFontSize(9);
-    pdf.setTextColor(150);
-    pdf.text('PDF 生成时间：' + ts, pageWidth - margin, pageHeight - 10, { align: 'right' });
-
-    pdf.save(title + '.pdf');
-    btn.textContent = '↓ 下载 PDF';
-    btn.disabled = false;
-
-  } catch(e) {
-    console.error(e);
-    btn.textContent = '↓ 下载 PDF';
-    btn.disabled = false;
-    alert('PDF 生成失败：' + e.message);
+  var el = document.getElementById('pdfTimestamp');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'pdfTimestamp';
+    el.className = 'pdf-timestamp';
+    document.querySelector('.mimo-article').appendChild(el);
   }
+  el.textContent = 'PDF 生成时间：' + ts;
+  window.print();
 }
 </script>
 
