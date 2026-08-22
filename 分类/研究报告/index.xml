@@ -6,155 +6,48 @@
     <description>Recent content in 研究报告 on Leo</description>
     <generator>Hugo -- 0.146.5</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 22 Aug 2026 10:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2026 02:40:00 +0000</lastBuildDate>
     <atom:link href="https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>对&#34;希望组合&#34;更多可能性一文的解释与说明</title>
-      <link>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/explanation-article/</link>
-      <pubDate>Sat, 22 Aug 2026 10:00:00 +0000</pubDate>
-      <guid>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/explanation-article/</guid>
-      <description>&lt;p&gt;“希望组合”的更多可能性&lt;/p&gt;
-&lt;p&gt;——一个从静态多资产配置到动态风险管理策略的实证研究&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;摘 要&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;“希望组合”是基于现代投资组合理论的全球多资产配置方案，设计目标是保持购买力水平不变，核心诉求是风险控制而非收益最大化。然而，回测数据显示，希望组合在2008至2026年间最大回撤达40.97%，与其“稳健”定位严重不符。第二部分诊断发现，希望组合的风控失效源于三个结构性问题：48%的非美风险资产在危机期间未能提供保护，固定权重无法在市场波动时自动降仓，资产数量过多导致权重分散。第三部分通过穷举测试14类81个单策略和10个组合策略，识别出C10策略方向——由40%反向波动率加权、40%波动率目标和20%黄金构成。C10的核心价值在于将极端回撤从40.97%压缩至15.94%，平均危机保护率从31.7%提升至55.7%，兑现了希望组合最初设定的抗风险目标。收益方面，年化回报从6.36%提升至9.27%，扣除交易成本（年换手率243.4%，往返成本0.08%）后仍为9.16%。进一步的再优化测试发现，50%反向波动率加权加30%波动率目标加10%黄金加10%美国国债的配置，在保护率上优于原始C10（58.3%对55.7%），但年化回报（7.8%）、最大回撤（-16.76%）和索提诺比率（1.28）均不及原C10，再优化并未找到全面超越原始配置的方案。过拟合检验表明，C10在样本外测试中索提诺比率达1.45，优于样本内的1.29，即使经Bonferroni多重检验校正后超额收益仍显著。但三年滚动窗口分析揭示了C10的环境依赖性——在2019至2022年利率上行期间表现较差，说明C10并非在所有市场环境下都能有效控制回撤。第三期采用改进版方案（50%反向波动率加权+30%波动率目标+10%黄金+10%美国国债），牺牲少量年化回报换取更高的保护率和更分散的对冲结构，增强了对单一黄金对冲脆弱性的抵御能力。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;第一部分 关于“希望组合”&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我的整体资产由“希望组合”与“逐梦组合”两个资产组合构成。前者追求稳健，守住底线；后者追求高收益，弹性进攻。本文将详细叙述追求稳健的“希望组合”。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1.1 希望组合的目标与参考基准&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在如今的信用派生法币的货币体系中，通胀是必然的。体系中每单位货币所代表的购买力随着时间推移一定在不断下降，仿佛被时间收了税。&lt;/p&gt;
-&lt;p&gt;40年前，在中国社会，“万元户”是社会财富金字塔尖的象征。如今，一部高端的智能手机价格便已动辄过万。这就是购买力被时间蚕食的典型例子。多么可悲的事情！付出自己的汗水而换来的购买力逐渐被时间蚕食。而“希望组合”的目标，是保持资产的稳定增值，是保证劳动产出的购买力不被通胀稀释。&lt;/p&gt;
-&lt;p&gt;基于组合“保持购买力水平不变”的目标，“希望组合”的收益率参考区间定为[中国大陆CPI,中国大陆CPI+4%]。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1.2 关于组合的操作&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;“希望组合”的操作与其目标以及收益率参考区间息息相关。总体来说，“希望组合”对收益率要求不高，但是对于回撤相当敏感。基于此，希望组合整体的操作重点在于对风险的对冲。&lt;/p&gt;
-&lt;p&gt;这一思路源于2025年4月“‘解放日’关税风波”之后的反思。在此之前，组合的权益资产过度集中于美股，导致在外部政策冲击下回撤剧烈。为修正这一组合缺陷，组合必须通过跨市场配置来对冲单一市场的波动性。从而确立了以美股为核心，辅以其他低相关性资产的配置架构。&lt;/p&gt;
-&lt;p&gt;关于选择特定市场的逻辑，我在2025年2月28日的资产调整报告中曾做过如下阐述：&lt;/p&gt;
+      <title>对《“希望组合”的更多可能性》一文的解释与说明</title>
+      <link>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/the-explanation-of-research-of-hope-portfolio-1/</link>
+      <pubDate>Sat, 22 Aug 2026 02:40:00 +0000</pubDate>
+      <guid>https://yuhengliuleo.github.io/%E5%88%86%E7%B1%BB/%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/the-explanation-of-research-of-hope-portfolio-1/</guid>
+      <description>&lt;p&gt;文章相关数据合集：&lt;a href=&#34;https://github.com/yuhengliuleo/hope-portfolio-database&#34;&gt;https://github.com/yuhengliuleo/hope-portfolio-database&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;原文：&lt;a href=&#34;https://yuhengliuleo.github.io/分类/研究报告/research-of-hope-protfolio-1/&#34;&gt;https://yuhengliuleo.github.io/分类/研究报告/research-of-hope-protfolio-1/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这一篇文章从落笔到成文历经千辛万苦。今年4月底的时候我就开始构思对我的“希望组合”进行升级操作。在此之前，因为缺少具体的数据支撑，“希望组合”的所有操作停留在感性层面，所有的操作基本上停滞。但是，上半年几乎所有的时间都奉献给了游泳训练，一直没能静心来好好搞一搞数据。放了暑假之后，有了大量的空闲的整段时间了，终于有了时间来复盘和提升我的“希望组合”了。根据以往的经验，我以为回测数据顶多需要2-3天的时间即可。但结果远远超出预期，从做数据到现在我整整做了1个月，这一个月当中每天爬起来就是数据，就是分析。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一、以下是文章的核心观点：&lt;/strong&gt;&lt;/p&gt;
 &lt;ol type=&#34;1&#34;&gt;
-&lt;li&gt;&lt;p&gt;我选择的市场：美国、日本、欧洲（德国、法国、英国）、中国大陆、中国香港&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;整体上，这些市场大部分都是发达国家的市场。相较于发展中国家，我认为发达国家的优势在于其在发展中过程中走过更多更完整的周期，本质上有了比发展中国家更多的经验，因此无论是在企业的日常经营活动、创新创造方面，还是在资本市场的监管政策方面，发达国家更加成熟。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;我的投资组合围绕美国市场建构，这是因为如今时代的金融逻辑依旧以美元为中心。以石油美元机制为例，这是一个自我强化的闭环，石油以美元结算，石油出口国因此拥有了大量的美元，但这些美元往往通过资本回流又回到了美国，为美国经济提供持续的流动性支持和融资便利。而美国的资本市场，当然地最先享受到这一结构带来的优势。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;“希望组合”的整体目标为：稳健、守住购买力，希望能在信用货币体系下对抗通胀侵蚀。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;经过2008年1月7日至2026年7月14日（约18.48年）的区间回测，“希望组合”在此区间内的最大回撤高达-40.97%，在区间内四个标普500回撤超过20%的主要危机事件中，“希望组合”录得的平均危机保护率仅31.7%，与其“稳健”定位严重不符。因此，文章需要判断出“希望组合”未达到预期目标的原因，并寻找更好的改进方案。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;“希望组合”的三大结构性缺陷：&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;然而，逻辑归逻辑，这种“以美股为核心、全球市场分散对冲”的策略在实际操作中是否真的有效？是否切实降低了组合的波动率？过去我写过的复盘总结多是基于理论的感性认知，缺乏真实数据验证。接下来的部分，我将通过实际的数据回测，力图对“希望组合”的实际效能给出一个理性的答案，并针对缺陷做出改进，尽全力优化组合逻辑。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;第二部分 把“希望组合”放到历史当中&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;“希望组合”本质上是一个基于现代投资组合理论（Markowitz, 1952）的全球多资产配置方案，其原理是通过跨地域、跨资产类别的分散化配置，在降低组合整体波动率的同时实现风险对冲。&lt;/p&gt;
-&lt;p&gt;为检验这一配置思路在实际市场环境中的有效性，本部分使用2008年1月7日至2026年7月14日期间的市场数据，对“希望组合”及另外五组基准组合进行了时间长度为18.48年的买入并持有策略的数据回测。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2.1 回测设计&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2.1.1 “希望组合”资产配置&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;“希望组合”共有11项底层标的，包含覆盖美国、欧洲、日本、大中华区的权益标的，以及大宗商品、债券和现金。&lt;/p&gt;
-&lt;table&gt;
-&lt;colgroup&gt;
-&lt;col style=&#34;width: 49%&#34; /&gt;
-&lt;col style=&#34;width: 50%&#34; /&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align: center;&#34;&gt;&lt;strong&gt;标的&lt;/strong&gt;&lt;/th&gt;
-&lt;th style=&#34;text-align: center;&#34;&gt;&lt;strong&gt;理想比例分配&lt;/strong&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;美股&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;27.00%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;欧洲&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;15.00%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;日本&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;15.00%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;大中华区&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;15.00%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;原油&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;3.00%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;流动资金&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;5.00%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;债券&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;20.00%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;表2-1 “希望组合”理想配置比例&lt;/p&gt;
-&lt;p&gt;回测所用的“希望组合”参照《“希望组合”二期怎么投？》中的理想配置比例（表2-1）构建。但受制于部分标的历史数据缺失，实际纳入回测的标的及其权重有部分适配性调整。详见表2-2。&lt;/p&gt;
-&lt;table&gt;
-&lt;colgroup&gt;
-&lt;col style=&#34;width: 33%&#34; /&gt;
-&lt;col style=&#34;width: 33%&#34; /&gt;
-&lt;col style=&#34;width: 33%&#34; /&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align: center;&#34;&gt;&lt;strong&gt;资产代码&lt;/strong&gt;&lt;/th&gt;
-&lt;th style=&#34;text-align: center;&#34;&gt;&lt;strong&gt;资产数据&lt;/strong&gt;&lt;/th&gt;
-&lt;th style=&#34;text-align: center;&#34;&gt;&lt;strong&gt;权重(%)&lt;/strong&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;标普500&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;SPDR S&amp;amp;P 500 ETF&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;15&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;纳斯达克100&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;FRED NASDAQ100&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;12&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;日经225_USD&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;FRED NIKKEI225 ÷ USD/JPY, 美元换算&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;15&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;德国ETF&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;iShares MSCI Germany ETF&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;英国ETF&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;iShares MSCI UK ETF, 拆股已复权&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;法国ETF&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;iShares MSCI France ETF 法国&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;沪深300&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;沪深300指数&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;7&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;香港ETF&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;iShares MSCI Hong Kong ETF 香港&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;7&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;原油&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;WTI原油期货&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;4&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;中国国债_synth&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;中国国债10Y×久期7.5&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;20&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;CASH&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;以年化收益1%计算&lt;/td&gt;
-&lt;td style=&#34;text-align: center;&#34;&gt;5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;表2-2 回测中“希望组合”标的配置比例&lt;/p&gt;</description>
+&lt;p&gt;（1）对冲机制失效：48%的非美权益市场资产与美股高度相关，尤其是欧洲市场与美股相关系数约0.82，高度相关。并且，各权益市场在危机期间相关性进一步上升。分散化在最需要保护的时候几乎失效，反而引入高波动与深回撤。&lt;/p&gt;
+&lt;p&gt;（2） 缺乏动态风险管理：“希望组合”采用固定权重买入持有的策略，无法在市场波动加剧时自动降仓。缺乏对市场波动的反应。&lt;/p&gt;
+&lt;p&gt;（3）组合设计缺陷：资产数量过多，最优资产（纳斯达克100等美国权益市场指数）权重被严重稀释。低收益资产（中国国债+现金）占比过高，拖累整体回报。&lt;/p&gt;
+&lt;p&gt;4. “希望组合”的最根本的问题不在于“跑输美股基准”，而在于以“稳健”为目标，但却拥有-40.97%的最大回撤。收益率不如美股，最大回撤却和美股差不多。承受的风险与收入并不成正比。&lt;/p&gt;
+&lt;p&gt;5. 采用等权、反向波动率、风险平价、趋势跟踪、波动率目标、动量、双动量、自适应配置等主流方法进行回测之后，选取出表现最佳策略C10进一步探究。&lt;/p&gt;
+&lt;p&gt;6. C10构成：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;（1）40% 反向波动率加权：覆盖8个资产（标普500、纳斯达克100、德国ETF、日经225、沪深300、原油、美债合成、中债合成）。按过去60日年化波动率的倒数分配权重。&lt;/p&gt;
+&lt;p&gt;（2）40% 波动率目标：使用纳斯达克100为标的，目标波动率15%，60日回望。仓位 = 15% / 当前波动率，约束在20%–100%，剩余资金配美国国债。高波动时自动降仓。&lt;/p&gt;
+&lt;p&gt;（3）20% 黄金：固定持有。因黄金与美元指数全样本及危机期间均保持负相关，对冲美元风险与极端危机。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;7. C10核心效果（含0.08%往返交易成本）：&lt;/p&gt;
+&lt;p&gt;（1）年化回报：6.36% → 9.27%（扣成本后约9.16%）&lt;/p&gt;
+&lt;p&gt;（2）最大回撤：-40.97% → -15.94%&lt;/p&gt;
+&lt;p&gt;（3）平均危机保护率：31.7% → 55.7%&lt;/p&gt;
+&lt;p&gt;（4）索提诺：0.58 → 1.29&lt;/p&gt;
+&lt;p&gt;（5）卡玛：0.16 → 0.58&lt;/p&gt;
+&lt;p&gt;（6）年化波动率：11.65% → 8.79%&lt;/p&gt;
+&lt;p&gt;8. 再优化：&lt;/p&gt;
+&lt;p&gt;综合权衡后，50%反向波动率加权 + 30%波动率目标 + 10%黄金 + 10%美国国债，在保护率上更优（58.3% vs 55.7%），但年化回报降至7.8%、最大回撤-16.76%、索提诺1.28，未能全面超越原C10。&lt;/p&gt;
+&lt;p&gt;9. 过拟合检验&lt;/p&gt;
+&lt;p&gt;（1）6:4样本外测试：测试集索提诺1.45 &amp;gt; 训练集1.29，最大回撤进一步缩小至-12.92%。&lt;/p&gt;
+&lt;p&gt;（2）三年滚动Walk-Forward（62个窗口）：滚动索提诺均值1.31，但2019.10–2022.09（利率上行期）仅0.22，显示明显环境依赖性。&lt;/p&gt;
+&lt;p&gt;（3）Bonferroni多重检验校正：超额收益t统计量4.011，p值0.000061，即使按最严格标准（0.05/91）仍显著。&lt;/p&gt;
+&lt;p&gt;（4）参数敏感性：索提诺在1.10–1.29区间相对稳健。&lt;/p&gt;
+&lt;p&gt;（5）结论：过拟合风险低于预期，但C10并非在所有市场环境都有效，在利率上行期间可能失效。&lt;/p&gt;</description>
     </item>
     <item>
       <title>“希望组合”的更多可能性</title>
