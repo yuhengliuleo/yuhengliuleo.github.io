@@ -57,19 +57,6 @@ a.mimo-nav-logo{display:inline-block}
 @media(max-width:1024px){.mimo-article{padding:48px 48px 80px}.mimo-article h1{font-size:38px}}
 @media(max-width:768px){.mimo-article{padding:36px 24px 60px}.mimo-article h1{font-size:30px}.mimo-article h2{font-size:22px}.mimo-article p,.mimo-article li{font-size:16px}.mimo-article table{font-size:14px}}
 @media(max-width:430px){.mimo-article{padding:28px 16px 48px}.mimo-article h1{font-size:24px}}
-.mimo-print-footer{display:none}
-@media print{
-  .mimo-nav,.mimo-footer,.mimo-article-actions{display:none!important}
-  .mimo-page{max-width:none}
-  .mimo-article{padding:0;max-width:none;margin:0}
-  .mimo-article h1{font-size:28px}
-  .mimo-article p,.mimo-article li{font-size:14px}
-  .mimo-article table{font-size:12px}
-  .mimo-article img{max-width:100%!important;page-break-inside:avoid}
-  .mimo-print-footer{display:block!important;text-align:right;font-size:11px;color:#999;margin-top:32px;padding-top:12px;border-top:1px solid #eee}
-  body{background:#fff!important}
-  .mimo-article-meta a{color:#000!important;text-decoration:none}
-}
 </style>
 
 </head>
@@ -167,22 +154,91 @@ a.mimo-nav-logo{display:inline-block}
 
   <div class="mimo-article-actions">
     <a class="mimo-back" href="/categories/%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/">← 返回 研究报告</a>
-    <button class="mimo-back mimo-download" onclick="downloadPDF()">↓ 下载 PDF</button>
+    <button class="mimo-back mimo-download" id="downloadBtn" onclick="downloadPDF()">↓ 下载 PDF</button>
   </div>
-  <div class="mimo-print-footer" id="printFooter"></div>
 </article>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.2/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script>
 function downloadPDF() {
-  
+  var btn = document.getElementById('downloadBtn');
+  btn.textContent = '生成中...';
+  btn.disabled = true;
+
   var now = new Date();
   var ts = now.getFullYear() + '-' +
     String(now.getMonth()+1).padStart(2,'0') + '-' +
     String(now.getDate()).padStart(2,'0') + ' ' +
     String(now.getHours()).padStart(2,'0') + ':' +
     String(now.getMinutes()).padStart(2,'0');
-  document.getElementById('printFooter').textContent = 'PDF 生成时间：' + ts;
-  window.print();
+
+  
+  var actions = document.querySelector('.mimo-article-actions');
+  actions.style.display = 'none';
+
+  
+  var footer = document.createElement('div');
+  footer.style.cssText = 'text-align:right;font-size:11px;color:#999;margin-top:32px;padding-top:12px;border-top:1px solid #eee';
+  footer.textContent = 'PDF 生成时间：' + ts;
+  var article = document.querySelector('.mimo-article');
+  article.appendChild(footer);
+
+  
+  var origBg = article.style.background;
+  article.style.background = '#fff';
+
+  html2canvas(article, {
+    scale: 2,
+    useCORS: true,
+    backgroundColor: '#ffffff',
+    logging: false
+  }).then(function(canvas) {
+    
+    article.style.background = origBg;
+    article.removeChild(footer);
+    actions.style.display = '';
+
+    var jsPDF = window.jspdf.jsPDF;
+    var imgData = canvas.toDataURL('image/jpeg', 0.95);
+    var pdf = new jsPDF('p', 'mm', 'a4');
+    var pdfWidth = pdf.internal.pageSize.getWidth();
+    var pdfHeight = pdf.internal.pageSize.getHeight();
+    var imgWidth = pdfWidth - 20; 
+    var imgHeight = canvas.height * imgWidth / canvas.width;
+
+    var y = 10; 
+    
+    var pageImgHeight = (pdfHeight - 20) * canvas.width / imgWidth;
+    var srcY = 0;
+
+    while (srcY < canvas.height) {
+      var sliceH = Math.min(pageImgHeight, canvas.height - srcY);
+      var sliceCanvas = document.createElement('canvas');
+      sliceCanvas.width = canvas.width;
+      sliceCanvas.height = sliceH;
+      var ctx = sliceCanvas.getContext('2d');
+      ctx.drawImage(canvas, 0, srcY, canvas.width, sliceH, 0, 0, canvas.width, sliceH);
+      var sliceData = sliceCanvas.toDataURL('image/jpeg', 0.95);
+      var sliceImgH = sliceH * imgWidth / canvas.width;
+
+      if (srcY > 0) pdf.addPage();
+      pdf.addImage(sliceData, 'JPEG', 10, 10, imgWidth, sliceImgH);
+      srcY += sliceH;
+    }
+
+    var title = document.querySelector('.mimo-article h1').textContent || 'article';
+    pdf.save(title + '.pdf');
+    btn.textContent = '↓ 下载 PDF';
+    btn.disabled = false;
+  }).catch(function(err) {
+    article.style.background = origBg;
+    if (footer.parentNode) article.removeChild(footer);
+    actions.style.display = '';
+    btn.textContent = '↓ 下载 PDF';
+    btn.disabled = false;
+    alert('PDF 生成失败，请重试');
+  });
 }
 </script>
 
